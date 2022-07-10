@@ -1,0 +1,28 @@
+{
+  "name": "linna-docs",
+  "private": false,
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "npm run build:static",
+    "build:server": "nuxt build",
+    "build:static": "nuxt generate",
+    "preview": "nuxt preview",
+    "link": "npm run link:sass && npm run link:util && npm run link:vue",
+    "link:sass": "ln -s ../linna-sass ./node_modules/linna-sass",
+    "link:util": "ln -s ../linna-util ./node_modules/linna-util",
+    "link:vue": "ln -s ../linna-vue ./node_modules/linna-vue"
+  },
+  "dependencies": {
+    "date-fns": "^2.28.0",
+    "lodash": "^4.17.21",
+    "vite-svg-loader": "^3.4.0"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0-rc.4",
+    "sass": "^1.53.0",
+    "sass-loader": "^10.2.1"
+  }
+}
