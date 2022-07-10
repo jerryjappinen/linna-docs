@@ -1,4 +1,4 @@
-// import { resolve } from 'path'
+import { resolve } from 'path'
 
 import isArray from 'lodash/isArray'
 import mergeWith from 'lodash/mergeWith'
@@ -15,14 +15,14 @@ const configs = [
   {
 
     // Link to local source files when running docs
-    // alias: {
-    //   'linna-vue': resolve(__dirname, '../../')
-    // },
+    alias: {
+      'linna-vue': resolve(__dirname, '../../linna-vue')
+    },
 
     // Make uncompiled components work
     build: {
       transpile: [
-        'linna-vue'
+        'linna-vue/components'
       ]
     },
 

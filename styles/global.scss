@@ -1,16 +1,16 @@
 // Global styling
 
 // Shared code
-@import '../../../linna-scss/variables';
-@import '../../../linna-scss/functions';
-@import '../../../linna-scss/mixins';
+@import '../../linna-sass/variables';
+@import '../../linna-sass/functions';
+@import '../../linna-sass/mixins';
 
 // Override default variables
 @import './variables';
 
 // Base styles
-@import '../../../linna-sass/normalize';
-@import '../../../linna-sass/defaults';
+@import '../../linna-sass/normalize';
+@import '../../linna-sass/defaults';
 
 // This site
 @import './body';
