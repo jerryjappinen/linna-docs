@@ -35,8 +35,7 @@ const configs = [
   isDev ? devSettings : {},
   {
 
-    // Make uncompiled components work
-    // FIXME: this should not be needed in production
+    // Include library components in the compilation
     build: {
       transpile: [
         'linna-vue/components'

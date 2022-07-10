@@ -18,6 +18,6 @@ export default {
   ],
 
   modules: [
-    'linna-vue'
+    'linna-vue/nuxt'
   ]
 }
