@@ -4,17 +4,16 @@ process.env.ALIAS_LINNA_SASS
 
 // Link to local source files when running docs
 const alias = {}
-
-if (process.env.ALIAS_LINNA_SASS) {
-  alias['linna-sass'] = resolve(__dirname, process.env.ALIAS_LINNA_SASS)
+const packages = {
+  'linna-sass': 'ALIAS_LINNA_SASS',
+  'linna-util': 'ALIAS_LINNA_UTIL',
+  'linna-vue': 'ALIAS_LINNA_VUE'
 }
 
-if (process.env.ALIAS_LINNA_UTIL) {
-  alias['linna-util'] = resolve(__dirname, process.env.ALIAS_LINNA_UTIL)
-}
-
-if (process.env.ALIAS_LINNA_VUE) {
-  alias['linna-vue'] = resolve(__dirname, process.env.ALIAS_LINNA_VUE)
+for (const packageName in packages) {
+  if (process.env[packages[packageName]]) {
+    alias[packageName] = resolve(__dirname, process.env[packages[packageName]])
+  }
 }
 
 export default {
