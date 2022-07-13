@@ -12,8 +12,12 @@ const packages = {
 
 for (const packageName in packages) {
   if (process.env[packages[packageName]]) {
-    alias[packageName] = resolve(__dirname, process.env[packages[packageName]])
+    alias[packageName] = resolve(__dirname, '../', process.env[packages[packageName]])
   }
+}
+
+if (alias['linna-util']) {
+  alias['linna-util'] = resolve(alias['linna-util'], 'src')
 }
 
 export default {

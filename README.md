@@ -57,7 +57,7 @@ If you want, you can easily link it to your local source files for developing ea
 
 ```sh
 # .env
-ALIAS_LINNA_SASS = "../../linna-sass"
-ALIAS_LINNA_UTIL = "../../linna-util"
-ALIAS_LINNA_VUE = "../../linna-vue"
+ALIAS_LINNA_SASS = "../linna-sass"
+ALIAS_LINNA_UTIL = "../linna-util"
+ALIAS_LINNA_VUE = "../linna-vue"
 ```
