@@ -1,38 +1,19 @@
-import { resolve } from 'path'
-
 import isArray from 'lodash/isArray'
 import mergeWith from 'lodash/mergeWith'
 
 import { isDev } from '../env'
 
 import assets from './assets'
+import dev from './dev'
 import meta from './meta'
 import modules from './modules'
-
-const devSettings = {
-  // These are only to make early development easier
-  // https://v3.nuxtjs.org/getting-started/introduction
-  ssr: false,
-  typescript: {
-    shim: false
-  },
-
-  // Link to local source files when running docs
-  alias: {
-    'linna-sass': resolve(__dirname, '../../linna-sass'),
-    'linna-util': resolve(__dirname, '../../linna-util'),
-    'linna-vue': resolve(__dirname, '../../linna-vue')
-  }
-}
-
-isDev
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 const configs = [
   assets,
   meta,
   modules,
-  isDev ? devSettings : {},
+  isDev ? dev : {},
   {
 
     // Include library components in the compilation

@@ -1,16 +1,10 @@
 // Global styling
-
-// Shared code
-@import '../../linna-sass/variables';
-@import '../../linna-sass/functions';
-@import '../../linna-sass/mixins';
-
-// Override default variables
-@import './variables';
+@import './shared';
 
 // Base styles
 @import '../../linna-sass/normalize';
 @import '../../linna-sass/defaults';
+@import '../../linna-sass/util';
 
 // This site
 @import './body';

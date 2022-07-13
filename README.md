@@ -1,42 +1,44 @@
-# Nuxt 3 Minimal Starter
+# Linna
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Collection of JavaScript, Sass and Vue code to help you with your projects.
 
-## Setup
+## Installation
 
-Make sure to install the dependencies:
+```sh
+# Sass
+npm i linna-sass
 
-```bash
-# yarn
-yarn install
+# JavaScript utilities
+npm i linna-util
 
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
+# Vue components, requires the other components
+npm i linna-scss linna-util linna-vue
 ```
 
-## Development Server
+## Using Sass
 
-Start the development server on http://localhost:3000
+See [`linna-sass`](https://npmjs.org/package/linna-sass)
 
-```bash
-npm run dev
+## Using utils
+
+```js
+import formatInitials from 'linna-util/formatInitials'
+
+formatInitials('James Jackson') // JJ
 ```
 
-## Production
+See [`linna-util`](https://npmjs.org/package/linna-util)
 
-Build the application for production:
+## Using Vue components
 
-```bash
-npm run build
+See [`linna-vue`](https://npmjs.org/package/linna-vue)
+
+### Nuxt module
+
+Install `linna-vue` as a Nuxt module to auto-import `components/`.
+
+```js
+defineNuxtConfig({
+  modules: ['linna-vue']
+})
 ```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.

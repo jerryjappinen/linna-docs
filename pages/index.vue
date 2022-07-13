@@ -1,29 +1,17 @@
 <script>
+import { VueComponent as Readme } from '../README.md'
+
 export default {
-  data () {
-    return {
-      componentPages: [
-        'AppStoreBadge',
-        'ExternalLink'
-      ]
-    }
+  components: {
+    Readme
   }
 }
 </script>
 
 <template>
   <div>
-    <h1>linna docs</h1>
-
-    <h2>Components</h2>
-
-    <li
-      v-for="componentPage in componentPages"
-      :key="componentPage"
-    >
-      <NuxtLink :to="'/c-' + componentPage">
-        {{ componentPage }}
-      </NuxtLink>
-    </li>
+    <Bodytext>
+      <Readme />
+    </Bodytext>
   </div>
 </template>
