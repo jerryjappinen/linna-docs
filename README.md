@@ -42,3 +42,22 @@ defineNuxtConfig({
   modules: ['linna-vue']
 })
 ```
+
+## Development
+
+This repo is a Nuxt 3 app. Run it like so:
+
+```sh
+nvm use 16
+npm i
+npm run dev
+```
+
+If you want, you can easily link it to your local source files for developing each of the modules:
+
+```sh
+# .env
+ALIAS_LINNA_SASS = "../../linna-sass"
+ALIAS_LINNA_UTIL = "../../linna-util"
+ALIAS_LINNA_VUE = "../../linna-vue"
+```
