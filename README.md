@@ -61,3 +61,9 @@ ALIAS_LINNA_SASS = "../linna-sass"
 ALIAS_LINNA_UTIL = "../linna-util"
 ALIAS_LINNA_VUE = "../linna-vue"
 ```
+
+# Todo
+
+- [] Add `--var()` support to variables
+  = Maybe a `custom-properties.scss` or something
+  = Optional addition to override default vars

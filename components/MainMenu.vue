@@ -4,7 +4,7 @@ export default {
     return {
       sassPages: [
         'body'
-      ],
+      m],
       utilPages: [
         'formatInitials'
       ],
@@ -26,7 +26,6 @@ export default {
     >
       Linna readme
     </NuxtLink>
-
 
     <h3 class="c-main-menu-lib">
       <code>linna-sass</code>
