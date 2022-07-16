@@ -29,7 +29,18 @@ export const utilPages = [
   'formatMachineReadableDate',
   'formatMachineReadableDateInterval',
   'formatMonth',
-  'formatSlug'
+  'formatSlug',
+  'getDomain',
+  'getGravatarImageUrl',
+  'getNameFromEmail',
+  'isAbsoluteUrl',
+  'isEmail',
+  'toPlainText',
+  'trimAllWhitespace',
+  'trimNewLines',
+  'trimWhitespace',
+  'wait'
+
 ]
 export const componentPages = [
   'AppStoreBadge',

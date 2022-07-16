@@ -1,3 +1,14 @@
 // body {
 //   max-width: $content-width-very-loose;
 // }
+
+pre {
+  @include push-vertical;
+
+  code {
+    @include block;
+    // @include radius;
+    @include pad;
+    border-width: 1px;
+  }
+}
