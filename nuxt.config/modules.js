@@ -5,7 +5,17 @@ import svgoConfig from './svgoConfig'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default {
+
+  // Include library components in the compilation
+  build: {
+    transpile: [
+      'linna-vue/components'
+    ]
+  },
+
   vite: {
+
+    // CSS preprocessing
     css: {
       preprocessorOptions: {
         scss: {
@@ -14,6 +24,7 @@ export default {
       }
     },
 
+    // Markdown imports
     plugins: [
       mdPlugin({
         mode: 'vue',

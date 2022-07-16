@@ -4,6 +4,7 @@ import mergeWith from 'lodash/mergeWith'
 import { isDev } from '../env'
 
 import assets from './assets'
+import env from './env'
 import dev from './dev'
 import meta from './meta'
 import modules from './modules'
@@ -11,6 +12,7 @@ import modules from './modules'
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 const configs = [
   assets,
+  env,
   meta,
   modules,
   isDev ? dev : {},

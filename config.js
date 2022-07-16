@@ -10,10 +10,20 @@ export const siteAccentColor = '#0052cd'
 export const twitterUsername = 'jerryjappinen'
 export const longSiteTitle = `${siteTitle} – ${siteTagline}`
 
-
-
 // Paths
-export const baseUrl = process.env.BASE_URL || isDev
+export const baseUrl = (process.env ? process.env.BASE_URL : null) || isDev
   ? 'http://localhost:3000'
   : 'https://linna.vercel.app'
 export const splashImagePath = baseUrl + '/splashImage.jpg'
+
+// Pages
+export const sassPages = [
+  'body'
+]
+export const utilPages = [
+  'formatInitials'
+]
+export const componentPages = [
+  'AppStoreBadge',
+  'ExternalLink'
+]
