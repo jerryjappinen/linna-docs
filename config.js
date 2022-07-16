@@ -22,7 +22,14 @@ export const sassPages = [
   'devices'
 ]
 export const utilPages = [
-  'formatInitials'
+  'formatDate',
+  'formatDateInterval',
+  'formatFileSize',
+  'formatInitials',
+  'formatMachineReadableDate',
+  'formatMachineReadableDateInterval',
+  'formatMonth',
+  'formatSlug'
 ]
 export const componentPages = [
   'AppStoreBadge',

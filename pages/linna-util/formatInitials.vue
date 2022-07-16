@@ -23,9 +23,11 @@ export default {
 <template>
   <div>
 
-    <h2>
-      <code>formatInitials</code>
-    </h2>
+    <h2><code>formatInitials(string)</code></h2>
+
+    <pre><code>import formatInitials from 'linna-util/formatInitials'</code></pre>
+
+    <h3>Example</h3>
 
     <p>
       <label>
