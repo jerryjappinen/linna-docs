@@ -4,11 +4,9 @@
 
 pre {
   @include push-vertical;
-
-  code {
-    @include block;
-    // @include radius;
-    @include pad;
-    border-width: 1px;
-  }
+  @include block;
+  @include radius;
+  @include pad;
+  background-color: $very-very-light-grey;
+  border-width: 1px;
 }

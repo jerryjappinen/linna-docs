@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <h1>AppStoreBadge</h1>
+    <h2><code>AppStoreBadge</code></h2>
 
     <p>
       <AppStoreBadge />

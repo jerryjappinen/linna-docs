@@ -12,7 +12,7 @@ export default {
 <template>
   <div>
 
-    <h1>ExternalLink</h1>
+    <h2><code>ExternalLink</code></h2>
 
     <p>
       <ExternalLink :href="url">
@@ -21,19 +21,13 @@ export default {
     </p>
 
     <p>
-      <ExternalLink
-        :here="true"
-        :href="url"
-      >
+      <ExternalLink :here="true" :href="url">
         {{ url }}
       </ExternalLink>
     </p>
 
     <p>
-      <ExternalLink
-        :refer="true"
-        :href="url"
-      >
+      <ExternalLink :refer="true" :href="url">
         {{ url }}
       </ExternalLink>
     </p>

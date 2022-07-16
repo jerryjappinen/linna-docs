@@ -61,3 +61,8 @@ ALIAS_LINNA_SASS = "../linna-sass"
 ALIAS_LINNA_UTIL = "../linna-util"
 ALIAS_LINNA_VUE = "../linna-vue"
 ```
+
+## Todo
+
+- [] Get code samples from separate files.
+- [] Add syntax highlighting

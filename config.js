@@ -30,6 +30,7 @@ export const utilPages = [
   'formatMachineReadableDateInterval',
   'formatMonth',
   'formatSlug',
+  'getContentfulImageUrl',
   'getDomain',
   'getGravatarImageUrl',
   'getNameFromEmail',
@@ -39,10 +40,19 @@ export const utilPages = [
   'trimAllWhitespace',
   'trimNewLines',
   'trimWhitespace',
+  'tryPromises',
   'wait'
 
 ]
+
 export const componentPages = [
   'AppStoreBadge',
   'ExternalLink'
+]
+
+export const composablePages = [
+  'cursor',
+  'network',
+  'time',
+  'viewport'
 ]
