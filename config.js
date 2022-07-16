@@ -49,7 +49,13 @@ export const componentPages = [
   'AppStoreBadge',
   'Buttons',
   'ClickButton',
+  'DateInterval',
+  'Dump',
+  'Ellipsis',
+  'EmailLink',
+  'Expand',
   'ExternalLink',
+  'GooglePlayBadge',
   'MobileWebAppBadge',
   'Spinner',
   'WebAppBadge'
