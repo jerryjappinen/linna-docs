@@ -18,7 +18,8 @@ export const splashImagePath = baseUrl + '/splashImage.jpg'
 
 // Pages
 export const sassPages = [
-  'body'
+  'body',
+  'devices'
 ]
 export const utilPages = [
   'formatInitials'
