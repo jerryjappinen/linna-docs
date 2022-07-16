@@ -47,12 +47,18 @@ export const utilPages = [
 
 export const componentPages = [
   'AppStoreBadge',
-  'ExternalLink'
+  'Buttons',
+  'ClickButton',
+  'ExternalLink',
+  'MobileWebAppBadge',
+  'Spinner',
+  'WebAppBadge'
 ]
 
 export const composablePages = [
   'cursor',
   'network',
+  // 'persist',
   'time',
   'viewport'
 ]
