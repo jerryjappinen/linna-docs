@@ -19,7 +19,8 @@ export const splashImagePath = baseUrl + '/splashImage.jpg'
 // Pages
 export const sassPages = [
   'body',
-  'devices'
+  'devices',
+  'shadow'
 ]
 export const utilPages = [
   'formatDate',
@@ -53,11 +54,13 @@ export const componentPages = [
   'Dump',
   'Ellipsis',
   'EmailLink',
-  'Expand',
   'ExternalLink',
   'GooglePlayBadge',
+  'LiveDuration',
   'MobileWebAppBadge',
+  'Slider',
   'Spinner',
+  'Switch',
   'WebAppBadge'
 ]
 

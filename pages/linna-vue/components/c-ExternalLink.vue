@@ -14,23 +14,43 @@ export default {
 
     <h2><code>ExternalLink</code></h2>
 
-    <p>
-      <ExternalLink :href="url">
-        {{ url }}
-      </ExternalLink>
-    </p>
+    <table>
+      <tr>
+        <th><code>here</code></th>
+        <th><code>refer</code></th>
+        <th>Output</th>
+      </tr>
 
-    <p>
-      <ExternalLink :here="true" :href="url">
-        {{ url }}
-      </ExternalLink>
-    </p>
+      <tr>
+        <td><code>false</code></td>
+        <td><code>false</code></td>
+        <td>
+          <ExternalLink :refer="true" :href="url">
+            {{ url }}
+          </ExternalLink>
+        </td>
+      </tr>
 
-    <p>
-      <ExternalLink :refer="true" :href="url">
-        {{ url }}
-      </ExternalLink>
-    </p>
+      <tr>
+        <td><code>true</code></td>
+        <td><code>false</code></td>
+        <td>
+          <ExternalLink :here="true" :href="url">
+            {{ url }}
+          </ExternalLink>
+        </td>
+      </tr>
+
+      <tr>
+        <td><code>false</code></td>
+        <td><code>true</code></td>
+        <td>
+          <ExternalLink :refer="true" :href="url">
+            {{ url }}
+          </ExternalLink>
+        </td>
+      </tr>
+    </table>
 
   </div>
 </template>
