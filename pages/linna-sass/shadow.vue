@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <h1>Shadow</h1>
+    <h2>Shadow</h2>
 
     <div class="shadows">
       <div class="hairline-shadow">

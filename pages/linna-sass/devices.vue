@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <h1>Widths</h1>
+    <h2>Widths</h2>
 
     <div class="width">
 
@@ -27,7 +27,7 @@
 
     </div>
 
-    <h1>Heights</h1>
+    <h2>Heights</h2>
 
     <div class="height">
 

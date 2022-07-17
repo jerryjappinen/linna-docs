@@ -33,6 +33,19 @@ See [`linna-util`](https://npmjs.org/package/linna-util)
 
 See [`linna-vue`](https://npmjs.org/package/linna-vue)
 
+### Icons
+
+Some Vue components rely on SVG icon assets. Since these are user-configurable, you must choose where to get them (or manually use the defaults from `linna-icons`).
+
+Linna assumes you import SVG icons as Vue components (using `vite-svg-loader`, for example). The `Vector` and `Icon` components can be used to render these SVG components easily.
+
+To completely replace the default icon set, provide the following icons:
+
+```
+Check.svg
+ChevronDown.svg
+```
+
 ### Nuxt module
 
 Install `linna-vue` as a Nuxt module to auto-import `components/`.
@@ -58,6 +71,7 @@ If you want, you can easily link it to your local source files for developing ea
 ```sh
 # .env
 ALIAS_LINNA_SASS = "../linna-sass"
+ALIAS_LINNA_SVG = "../linna-svg"
 ALIAS_LINNA_UTIL = "../linna-util"
 ALIAS_LINNA_VUE = "../linna-vue"
 ```

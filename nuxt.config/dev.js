@@ -14,6 +14,7 @@ const devConfig = {
 // Link to local source files when running docs
 const packages = {
   'linna-sass': 'ALIAS_LINNA_SASS',
+  'linna-svg': 'ALIAS_LINNA_SVG',
   'linna-util': 'ALIAS_LINNA_UTIL',
   'linna-vue': 'ALIAS_LINNA_VUE'
 }

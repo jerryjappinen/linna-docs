@@ -25,6 +25,16 @@ export default {
         </NuxtLink>
 
         <h3 class="c-layout-default-sidebar-lib">
+          <code>linna-icons/</code>
+        </h3>
+
+        <ul>
+          <NuxtLink to="/linna-icons" class="c-layout-default-sidebar-link">
+            Full icon set
+          </NuxtLink>
+        </ul>
+
+        <h3 class="c-layout-default-sidebar-lib">
           <code>linna-sass/</code>
         </h3>
 
