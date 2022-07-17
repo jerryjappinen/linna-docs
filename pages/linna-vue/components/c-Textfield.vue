@@ -81,8 +81,9 @@ export default {
             <textfield
               v-model="value"
               :clear="true"
-              icon="magnifying-glass"
-            />
+            >
+              <IconMagnifyingClass />
+            </textfield>
           </td>
         </tr>
 
