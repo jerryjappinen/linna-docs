@@ -62,6 +62,8 @@ export const componentPages = [
   'Slider',
   'Spinner',
   'Switch',
+  'Textfield',
+  'Tweet',
   'WebAppBadge'
 ]
 

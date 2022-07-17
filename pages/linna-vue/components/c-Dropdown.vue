@@ -40,17 +40,23 @@ export default {
 
     <h2><code>Dropdown</code></h2>
 
-    <h3>Example</h3>
+    <pre><code>import Dropdown from 'linna-vue/components/Dropdown'</code></pre>
 
-    <Dump :data="options" />
+    <h3>Example</h3>
 
     <p>
       Selected: <code>{{ selected }}</code> (<button @click="clear">clear</button>)
     </p>
 
     <p>
-      <Dropdown placeholder="Select an option..." :options="options" v-model="selected" />
+      <Dropdown
+        placeholder="Select one of the options available..."
+        :options="options"
+        v-model="selected"
+      />
     </p>
+
+    <Dump :data="options" />
 
   </div>
 </template>

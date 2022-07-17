@@ -1,0 +1,44 @@
+<script>
+export default {
+  data () {
+    return {
+      userName: 'jerryjappinen',
+      tweetId: 1537444796670701568
+    }
+  }
+}
+
+</script>
+
+<template>
+  <div>
+
+    <h1>Tweet</h1>
+
+    <h3>Example</h3>
+
+    <div class="tweets">
+      <Tweet
+        :user-name="userName"
+        :tweet-id="tweetId"
+      />
+
+      <Tweet
+        :user-name="userName"
+        :tweet-id="tweetId"
+        :dark="true"
+      />
+    </div>
+
+  </div>
+</template>
+
+<style lang="scss" scoped>
+
+.tweets {
+  .c-tweet {
+    @include push-vertical;
+  }
+}
+
+</style>
