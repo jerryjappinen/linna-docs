@@ -16,8 +16,10 @@ export default {
 
     <h2><code>Dump</code></h2>
 
+    <h3>Example</h3>
+
     <p>
-      <Dump :value="dump" />
+      <Dump :data="dump" />
     </p>
 
   </div>

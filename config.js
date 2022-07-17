@@ -51,6 +51,7 @@ export const componentPages = [
   'Buttons',
   'ClickButton',
   'DateInterval',
+  'Dropdown',
   'Dump',
   'Ellipsis',
   'EmailLink',
