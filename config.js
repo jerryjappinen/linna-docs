@@ -1,10 +1,10 @@
 import { isDev } from './env'
 
 // Meta data
-export const siteAuthor = 'Miscelle Team'
-export const siteTitle = 'Miscelle'
-export const siteTagline = 'Miscellaneous cr*p as a service'
-export const siteDescription = 'Orchestrate integrations, manage data, API keys and collaborate with your team.'
+export const siteAuthor = 'Jerry Jäppinen'
+export const siteTitle = 'Linna'
+export const siteTagline = 'JavaScript, Sass and Vue utilities'
+export const siteDescription = 'Build user interfaces on the web fast.'
 export const siteMainColor = '#ffffff' // '#21324b'
 export const siteAccentColor = '#0052cd'
 export const twitterUsername = 'jerryjappinen'

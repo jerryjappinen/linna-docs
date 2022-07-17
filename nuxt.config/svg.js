@@ -1,3 +1,5 @@
+import svgLoader from 'vite-svg-loader'
+
 const svgoPluginsConfig = {
   removeViewBox: false,
   removeTitle: true,
@@ -41,7 +43,16 @@ for (const pluginName in svgoPluginsConfig) {
 }
 
 // https://github.com/svg/svgo
+// https://www.npmjs.com/package/vite-svg-loader
 export default {
-  // multipass: true,
-  plugins: svgoPlugins
+  vite: {
+    plugins: [
+      svgLoader({
+        svgoConfig: {
+          // multipass: true,
+          plugins: svgoPlugins
+        }
+      })
+    ]
+  }
 }

@@ -129,9 +129,9 @@ export default {
 
         <tr>
           <td>
-            <code>autocomplete</code> enables <doc
+            <code>autocomplete</code> enables <ExternalLink
               href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#inappropriate-for-the-control"
-            >browser's autocomplete</doc> feature. Always use the <code>name</code> attribute with this.
+            >browser's autocomplete</ExternalLink> feature. Always use the <code>name</code> attribute with this.
           </td>
           <td>
             <textfield
@@ -148,9 +148,9 @@ export default {
     <h3>Types</h3>
 
     <p>
-      Set <code>type</code> to any <doc
+      Set <code>type</code> to any <ExternalLink
         href="https://www.w3schools.com/tags/att_input_type.asp"
-      >HTML input type</doc>. Default is <code>text</code>.
+      >HTML input type</ExternalLink>. Default is <code>text</code>.
     </p>
 
     <table>
