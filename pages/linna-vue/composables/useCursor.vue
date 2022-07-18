@@ -1,6 +1,4 @@
 <script>
-import useCursor from 'linna-vue/composables/cursor'
-
 export default {
 
   data () {

@@ -1,6 +1,4 @@
 <script>
-import useViewport from 'linna-vue/composables/viewport'
-
 export default {
 
   data () {

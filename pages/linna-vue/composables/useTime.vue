@@ -1,6 +1,4 @@
 <script>
-import useTime from 'linna-vue/composables/time'
-
 export default {
 
   data () {

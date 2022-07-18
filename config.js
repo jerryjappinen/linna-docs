@@ -68,9 +68,10 @@ export const componentPages = [
 ]
 
 export const composablePages = [
-  'cursor',
-  'network',
-  'persist',
-  'time',
-  'viewport'
+  'useCursor',
+  // 'useGamepad',
+  'useNetwork',
+  'usePersist',
+  'useTime',
+  'useViewport'
 ]

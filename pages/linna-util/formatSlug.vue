@@ -4,8 +4,11 @@ import formatSlug from 'linna-util/formatSlug'
 export default {
 
   data () {
+    const string = 'Foo bar foo bar'
+
     return {
-      renderedSlug: formatSlug('Foo bar')
+      string,
+      renderedSlug: formatSlug(string)
     }
   }
 
@@ -24,7 +27,7 @@ export default {
 
     <table>
       <tr>
-        <td>Foo bar</td>
+        <td>{{ string }}</td>
         <td>{{ renderedSlug }}</td>
       </tr>
     </table>

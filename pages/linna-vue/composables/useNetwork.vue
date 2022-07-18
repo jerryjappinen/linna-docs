@@ -1,6 +1,4 @@
 <script>
-import useNetwork from 'linna-vue/composables/network'
-
 export default {
 
   data () {
