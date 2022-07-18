@@ -17,7 +17,7 @@
     "linna-icons": "^0.1.2",
     "linna-sass": "^0.2.4",
     "linna-util": "^5.0.19",
-    "linna-vue": "^0.1.20",
+    "linna-vue": "^0.2.0",
     "lodash": "^4.17.21",
     "vite-svg-loader": "^3.4.0",
     "vue-slider-component": "^4.0.0-beta.9"
