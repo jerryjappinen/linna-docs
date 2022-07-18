@@ -15,31 +15,29 @@
 
     </Bodytext>
 
-    <!-- <h3>Using Icon component</h3> -->
-
-    <!-- <p>
-      <Icon src="figma" />
-      <Icon src="figma" :color="true" />
-    </p> -->
-
-    <h3>Icons required by <code>linna-vue</code></h3>
-
-    <p>
-      <IconCheck /><IconChevronDown /><IconCross /><IconUndo />
-    </p>
-
     <h3>Using individual icons</h3>
 
     <pre><code>&lt;IconFigma /&gt; &lt;IconCheck /&gt;</code></pre>
 
+    <!-- I want to use the Icon assets in some standardised way -->
     <p>
       <Icon>
         <IconFigma />
       </Icon>
 
-      <Icon>
+      <Icon size="medium">
         <IconCheck />
       </Icon>
+
+      <Icon color="true">
+        <IconCheck />
+      </Icon>
+    </p>
+
+    <h3>Icons required by <code>linna-vue</code></h3>
+
+    <p>
+      <IconCheck /><IconChevronDown /><IconCross /><IconUndo />
     </p>
 
   </div>

@@ -20,18 +20,30 @@ export default {
     <div class="c-layout-default-sidebar">
       <div class="c-layout-default-sidebar-content">
 
-        <NuxtLink to="/" class="c-layout-default-sidebar-link">
-          Linna readme
-        </NuxtLink>
-
-        <h3 class="c-layout-default-sidebar-lib">
-          <code>linna-icons/</code>
-        </h3>
-
         <ul>
-          <NuxtLink to="/linna-icons" class="c-layout-default-sidebar-link">
-            Full icon set
-          </NuxtLink>
+          <li>
+            <NuxtLink to="/" class="c-layout-default-sidebar-link">
+              Linna readme
+            </NuxtLink>
+          </li>
+
+          <li>
+            <NuxtLink to="/linna-icons" class="c-layout-default-sidebar-link">
+              linna-icons
+            </NuxtLink>
+          </li>
+
+          <li>
+            <NuxtLink to="/debug" class="c-layout-default-sidebar-link">
+              debug
+            </NuxtLink>
+          </li>
+
+          <li>
+            <NuxtLink to="/debugSetup" class="c-layout-default-sidebar-link">
+              debugSetup
+            </NuxtLink>
+          </li>
         </ul>
 
         <h3 class="c-layout-default-sidebar-lib">

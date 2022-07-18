@@ -1,5 +1,5 @@
 <script>
-import getContentfulImageUrl from 'linna-util/getContentfulImageUrl'
+import getImageUrl from 'linna-util/contentful/getImageUrl'
 
 export default {
 
@@ -19,7 +19,7 @@ export default {
   },
 
   methods: {
-    getContentfulImageUrl
+    getImageUrl
   }
 
 }
@@ -29,11 +29,11 @@ export default {
 <template>
   <div>
 
-    <h2><code>getContentfulImageUrl(url, options)</code></h2>
+    <h2><code>getImageUrl(url, options)</code></h2>
 
     <pre><code>npm i lodash</code></pre>
 
-    <pre><code>import getContentfulImageUrl from 'linna-util/getContentfulImageUrl'</code></pre>
+    <pre><code>import getImageUrl from 'linna-util/contentful/getImageUrl'</code></pre>
 
     <p>
       See <a
@@ -46,25 +46,25 @@ export default {
     <table>
 
       <tr>
-        <td><code>getContentfulImageUrl('{{ testUrl }}')</code></td>
-        <td>{{ getContentfulImageUrl(testUrl) }}</td>
+        <td><code>getImageUrl('{{ testUrl }}')</code></td>
+        <td>{{ getImageUrl(testUrl) }}</td>
       </tr>
 
       <tr>
-        <td><code>getContentfulImageUrl({ url: '{{ testUrl }}' })</code></td>
-        <td>{{ getContentfulImageUrl({ url: testUrl }) }}</td>
+        <td><code>getImageUrl({ url: '{{ testUrl }}' })</code></td>
+        <td>{{ getImageUrl({ url: testUrl }) }}</td>
       </tr>
 
       <tr>
-        <td><code>getContentfulImageUrl({ image: contentfulImageField })</code></td>
-        <td>{{ getContentfulImageUrl({ image: testImageObject }) }}</td>
+        <td><code>getImageUrl({ image: contentfulImageField })</code></td>
+        <td>{{ getImageUrl({ image: testImageObject }) }}</td>
       </tr>
 
     </table>
 
     <h3>Passing options</h3>
 
-    <pre><code>getContentfulImageUrl(url, {
+    <pre><code>getImageUrl(url, {
   width: 200,
   height: 200,
   fit: 'pad',
@@ -73,7 +73,7 @@ export default {
 
     <p>
       {{
-        getContentfulImageUrl(testUrl, {
+        getImageUrl(testUrl, {
           width: 200,
           height: 200,
           fit: 'pad',

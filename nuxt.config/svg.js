@@ -1,8 +1,9 @@
 import svgLoader from 'vite-svg-loader'
 
 const svgoPluginsConfig = {
-  removeViewBox: false,
   removeTitle: true,
+  // removeViewBox: true,
+  removeDimensions: true,
 
   // cleanupIds: {
   //   remove: false,

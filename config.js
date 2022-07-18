@@ -70,7 +70,7 @@ export const componentPages = [
 export const composablePages = [
   'cursor',
   'network',
-  // 'persist',
+  'persist',
   'time',
   'viewport'
 ]

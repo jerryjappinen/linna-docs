@@ -1,31 +1,33 @@
-<script setup>
-import { ref, computed } from 'vue'
+<script>
+import { ref, computed, getCurrentInstance } from 'vue'
 
-import usePersist from 'linna-vue/composables/persist'
+// import usePersist from 'linna-vue/composables/persist'
 
-const testVar1 = ref(1)
-const testVar2 = ref('Foo')
+// const testVar1 = ref(1)
+// const testVar2 = ref('Foo')
 
-const persistData = computed(() => {
-  return {
-    testVar1,
-    testVar2
-  }
-})
+// const persistData = computed(() => {
+//   return {
+//     testVar1,
+//     testVar2
+//   }
+// })
 
-const persist = usePersist(persistData)
+// const persist = usePersist(persistData)
 
-const values = computed(() => {
-  return {
-    persistLoaded: persist.persistLoaded,
-    loadPersistOnCreate: persist.loadPersistOnCreate,
-    componentName: persist.componentName,
-    componentId: persist.componentId,
-    defaultPersistKey: persist.defaultPersistKey,
-    defaultInstancePersistKey: persist.defaultInstancePersistKey,
-    persistKey: persist.persistKey
-  }
-})
+// const values = computed(() => {
+//   return {
+//     persistLoaded: persist.persistLoaded,
+//     loadPersistOnCreate: persist.loadPersistOnCreate,
+//     componentName: persist.componentName,
+//     componentId: persist.componentId,
+//     defaultPersistKey: persist.defaultPersistKey,
+//     defaultInstancePersistKey: persist.defaultInstancePersistKey,
+//     persistKey: persist.persistKey
+//   }
+// })
+
+const i = getCurrentInstance()
 </script>
 
 <template>
@@ -53,19 +55,11 @@ const values = computed(() => {
         </td>
       </tr> -->
 
-      <tr v-for="(value, name) in values" :key="name">
+      <!-- <tr v-for="(value, name) in values" :key="name">
         <th><code>persist.{{ name }}</code></th>
         <td><code>{{ value }}</code></td>
-      </tr>
+      </tr> -->
     </table>
 
   </div>
 </template>
-
-<style lang="scss" scoped>
-
-button {
-  @include link;
-}
-
-</style>
