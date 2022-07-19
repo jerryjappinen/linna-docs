@@ -1,5 +1,5 @@
 <script>
-import formatDate from 'linna-util/formatDate'
+import { formatDate } from 'linna-util'
 
 export default {
 
@@ -20,7 +20,7 @@ export default {
 
     <pre><code>npm i date-fns</code></pre>
 
-    <pre><code>import formatDate from 'linna-util/formatDate'</code></pre>
+    <pre><code>import { formatDate } from 'linna-util'</code></pre>
 
     <h3>Example</h3>
 

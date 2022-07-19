@@ -1,5 +1,5 @@
 <script>
-import formatDateInterval from 'linna-util/formatDateInterval'
+import { formatDateInterval } from 'linna-util'
 
 const oldDate1 = new Date('2018-01-01 22:22:22')
 const oldDate2 = new Date('2018-01-02 22:22:22')
@@ -34,7 +34,7 @@ export default {
 
     <pre><code>npm i date-fns</code></pre>
 
-    <pre><code>import formatDateInterval from 'linna-util/formatDateInterval'</code></pre>
+    <pre><code>import { formatDateInterval } from 'linna-util'</code></pre>
 
     <h3>Example</h3>
 

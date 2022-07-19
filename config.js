@@ -31,7 +31,6 @@ export const utilPages = [
   'formatMachineReadableDateInterval',
   'formatMonth',
   'formatSlug',
-  'getContentfulImageUrl',
   'getDomain',
   'getGravatarImageUrl',
   'getNameFromEmail',

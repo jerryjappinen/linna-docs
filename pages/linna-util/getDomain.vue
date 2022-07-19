@@ -1,5 +1,5 @@
 <script>
-import getDomain from 'linna-util/getDomain'
+import { getDomain } from 'linna-util'
 
 export default {
 
@@ -22,7 +22,7 @@ export default {
 
     <h2><code>getDomain(url)</code></h2>
 
-    <pre><code>import getDomain from 'linna-util/getDomain'</code></pre>
+    <pre><code>import { getDomain } from 'linna-util'</code></pre>
 
     <table>
       <tbody>

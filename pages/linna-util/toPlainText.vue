@@ -1,5 +1,5 @@
 <script>
-import toPlainText from 'linna-util/toPlainText'
+import { toPlainText } from 'linna-util'
 
 export default {
 
@@ -25,7 +25,7 @@ export default {
 
     <pre><code>npm i remove-markdown</code></pre>
 
-    <pre><code>import toPlainText from 'linna-util/toPlainText'</code></pre>
+    <pre><code>import { toPlainText } from 'linna-util'</code></pre>
 
     <h3>Example</h3>
 

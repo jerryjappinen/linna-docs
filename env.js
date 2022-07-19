@@ -1,4 +1,3 @@
-// import isClient from 'linna-util/isClient'
-// import isServer from 'linna-util/isServer'
+// import { isClient, isServer } from 'linna-util'
 
 export const isDev = process.env.NODE_ENV === 'development'

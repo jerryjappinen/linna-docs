@@ -1,5 +1,5 @@
 <script>
-import formatMachineReadableDateTime from 'linna-util/formatMachineReadableDateTime'
+import { formatMachineReadableDateTime } from 'linna-util'
 
 export default {
 
@@ -20,7 +20,7 @@ export default {
 
     <pre><code>npm i date-fns</code></pre>
 
-    <pre><code>import formatMachineReadableDateTime from 'linna-util/formatMachineReadableDateTime'</code></pre>
+    <pre><code>import { formatMachineReadableDateTime } from 'linna-util'</code></pre>
 
     <h3>Example</h3>
 

@@ -1,5 +1,5 @@
 <script>
-import getGravatarImageUrl from 'linna-util/getGravatarImageUrl.js'
+import { getGravatarImageUrl } from 'linna-util'
 
 export default {
 
@@ -28,6 +28,8 @@ export default {
     <h2><code>getGravatarImageUrl(email, size)</code></h2>
 
     <pre><code>npm i md5</code></pre>
+
+    <pre><code>import { getGravatarImageUrl } from 'linna-util'</code></pre>
 
     <h3>Example</h3>
 

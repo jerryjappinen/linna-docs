@@ -1,5 +1,5 @@
 <script>
-import isEmail from 'linna-util/isEmail'
+import { isEmail } from 'linna-util'
 
 export default {
 
@@ -26,7 +26,7 @@ export default {
 
     <h2><code>isEmail(string)</code></h2>
 
-    <pre><code>import isEmail from 'linna-util/isEmail'</code></pre>
+    <pre><code>import { isEmail } from 'linna-util'</code></pre>
 
     <h3>Example</h3>
 

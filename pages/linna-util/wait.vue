@@ -1,5 +1,5 @@
 <script>
-import wait from 'linna-util/wait'
+import { wait } from 'linna-util'
 
 const delay = 3000
 
@@ -39,7 +39,7 @@ export default {
 
     <h2><code>async wait(delay: 2000)</code></h2>
 
-    <pre><code>import trimWhitespace from 'linna-util/trimWhitespace'</code></pre>
+    <pre><code>import { wait } from 'linna-util'</code></pre>
 
     <p>
       Delay resolution of asynchronous code. This is mostly useful for debugging and testing.

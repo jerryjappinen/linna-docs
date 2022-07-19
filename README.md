@@ -22,7 +22,7 @@ See [`linna-sass`](https://npmjs.org/package/linna-sass)
 ## Using utils
 
 ```js
-import formatInitials from 'linna-util/formatInitials'
+import { formatInitials } from 'linna-util'
 
 formatInitials('James Jackson') // JJ
 ```

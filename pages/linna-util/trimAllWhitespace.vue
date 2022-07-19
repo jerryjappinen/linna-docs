@@ -1,5 +1,5 @@
 <script>
-import trimAllWhitespace from 'linna-util/trimAllWhitespace'
+import { trimAllWhitespace } from 'linna-util'
 
 export default {
 
@@ -33,7 +33,7 @@ bar     bar
 
     <h2><code>trimAllWhitespace(string)</code></h2>
 
-    <pre><code>import trimAllWhitespace from 'linna-util/trimAllWhitespace'</code></pre>
+    <pre><code>import { trimAllWhitespace } from 'linna-util'</code></pre>
 
     <p>
       String with copious amounts of whitespace like this

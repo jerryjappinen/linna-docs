@@ -1,6 +1,5 @@
 <script>
-import tryPromises from 'linna-util/tryPromises'
-import wait from 'linna-util/wait'
+import { tryPromises, wait } from 'linna-util'
 
 export default {
 
@@ -47,7 +46,7 @@ export default {
 
     <h2><code>async tryPromises(promise1, promise2, ...)</code></h2>
 
-    <pre><code>import tryPromises from 'linna-util/tryPromises'</code></pre>
+    <pre><code>import { tryPromises } from 'linna-util'</code></pre>
 
     <p>
       Wait for multiple promises in parallel, but always resolve even if some promises fail. Failed promises resolve

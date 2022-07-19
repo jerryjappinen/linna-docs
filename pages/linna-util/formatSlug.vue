@@ -1,5 +1,5 @@
 <script>
-import formatSlug from 'linna-util/formatSlug'
+import { formatSlug } from 'linna-util'
 
 export default {
 
@@ -21,7 +21,7 @@ export default {
 
     <h2><code>formatSlug(string)</code></h2>
 
-    <pre><code>import formatSlug from 'linna-util/formatSlug'</code></pre>
+    <pre><code>import { formatSlug } from 'linna-util'</code></pre>
 
     <h3>Example</h3>
 
