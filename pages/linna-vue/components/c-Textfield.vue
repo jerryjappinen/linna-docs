@@ -27,7 +27,7 @@ export default {
             <code>Textfield</code>
           </td>
           <td colspan="2">
-            <textfield v-model="value" />
+            <Textfield v-model="value" />
           </td>
         </tr>
 
@@ -36,7 +36,7 @@ export default {
             With placeholder
           </td>
           <td colspan="2">
-            <textfield
+            <Textfield
               v-model="emptyValue"
               placeholder="Fill in value..."
             />
@@ -48,7 +48,7 @@ export default {
             Clear button
           </td>
           <td colspan="2">
-            <textfield
+            <Textfield
               v-model="value"
               :clear="true"
             />
@@ -60,13 +60,13 @@ export default {
             Undo button
           </td>
           <td>
-            <textfield
+            <Textfield
               v-model="value"
               :undo="true"
             />
           </td>
           <td>
-            <textfield
+            <Textfield
               v-model="value"
               undo="Foo"
             />
@@ -78,12 +78,14 @@ export default {
             With an icon
           </td>
           <td colspan="2">
-            <textfield
+            <Textfield
               v-model="value"
               :clear="true"
             >
-              <IconMagnifyingClass />
-            </textfield>
+              <Icon>
+                <IconSearch />
+              </Icon>
+            </Textfield>
           </td>
         </tr>
 
@@ -92,14 +94,14 @@ export default {
             Min and max values
           </td>
           <td>
-            <textfield
+            <Textfield
               v-model="value"
               :min="2"
               :max="6"
             />
           </td>
           <td>
-            <textfield
+            <Textfield
               v-model="numberValue"
               type="number"
               :min="2"
@@ -113,7 +115,7 @@ export default {
             Render a <code>textarea</code>
           </td>
           <td colspan="2">
-            <textfield
+            <Textfield
               v-model="value"
               :multiline="true"
             />
@@ -135,7 +137,7 @@ export default {
             >browser's autocomplete</ExternalLink> feature. Always use the <code>name</code> attribute with this.
           </td>
           <td>
-            <textfield
+            <Textfield
               v-model="value"
               :autocomplete="true"
               name="Name"
@@ -167,21 +169,21 @@ export default {
 
         <tr>
           <td>
-            <textfield
+            <Textfield
               v-model="numberValue"
               type="number"
             />
             {{ typeof numberValue }}
           </td>
           <td>
-            <textfield
+            <Textfield
               v-model="emailValue"
               type="email"
             />
             {{ typeof emailValue }}
           </td>
           <td>
-            <textfield
+            <Textfield
               v-model="monthValue"
               type="month"
             />

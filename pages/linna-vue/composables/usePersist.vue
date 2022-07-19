@@ -1,7 +1,7 @@
 <script setup>
 const someValue = ref(1)
 
-const { persistKey, persistData, clearPersistData } = persist(someValue)
+const { persistKey, persistData, clearPersistData } = usePersist(someValue)
 
 const iterate = () => {
   someValue.value++
