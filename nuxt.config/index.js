@@ -1,4 +1,4 @@
-import { isArray, mergeWith } from 'lodash'
+import { isArray, mergeWith } from 'lodash-es'
 
 import { isDev } from '../env'
 
