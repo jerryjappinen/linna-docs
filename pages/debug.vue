@@ -1,11 +1,5 @@
-<script>
-export default {
-  data () {
-    return {
-      isMounted: useIsMounted()
-    }
-  }
-}
+<script setup>
+const isMounted = useIsMounted()
 </script>
 
 <template>

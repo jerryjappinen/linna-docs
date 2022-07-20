@@ -38,12 +38,6 @@ export default {
               debug
             </NuxtLink>
           </li>
-
-          <li>
-            <NuxtLink to="/debugSetup" class="c-layout-default-sidebar-link">
-              debugSetup
-            </NuxtLink>
-          </li>
         </ul>
 
         <h3 class="c-layout-default-sidebar-lib">

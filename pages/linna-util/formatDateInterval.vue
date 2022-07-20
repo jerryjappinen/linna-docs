@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import { formatDateInterval } from 'linna-util'
 
 const oldDate1 = new Date('2018-01-01 22:22:22')
@@ -6,25 +6,11 @@ const oldDate2 = new Date('2018-01-02 22:22:22')
 const oldDate3 = new Date('2018-02-02 22:22:22')
 const oldDate4 = new Date('2019-02-02 22:22:22')
 
-export default {
-
-  data () {
-    return {
-      oldDate1,
-      oldDate2,
-      oldDate3,
-      oldDate4,
-
-      renderedDateInterval1: formatDateInterval(oldDate1, oldDate2),
-      renderedDateInterval2: formatDateInterval(oldDate2, oldDate3),
-      renderedDateInterval3: formatDateInterval(oldDate3, oldDate4),
-      renderedDateInterval4: formatDateInterval(oldDate1, oldDate4),
-      renderedDateInterval5: formatDateInterval(oldDate4, oldDate1)
-    }
-  }
-
-}
-
+const renderedDateInterval1 = formatDateInterval(oldDate1, oldDate2)
+const renderedDateInterval2 = formatDateInterval(oldDate2, oldDate3)
+const renderedDateInterval3 = formatDateInterval(oldDate3, oldDate4)
+const renderedDateInterval4 = formatDateInterval(oldDate1, oldDate4)
+const renderedDateInterval5 = formatDateInterval(oldDate4, oldDate1)
 </script>
 
 <template>

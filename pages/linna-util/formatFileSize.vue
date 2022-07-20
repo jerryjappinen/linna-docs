@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import { formatFileSize } from 'linna-util'
 
 const fileSizes = [
@@ -24,24 +24,7 @@ const fileSizes = [
   12345678901234567890
 ]
 
-export default {
-
-  data () {
-    return {
-      fileSizes
-    }
-  },
-
-  computed: {
-
-    formattedFileSizes () {
-      return fileSizes.map(formatFileSize)
-    }
-
-  }
-
-}
-
+const formattedFileSizes = fileSizes.map(formatFileSize)
 </script>
 
 <template>

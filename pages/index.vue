@@ -1,11 +1,5 @@
-<script>
+<script setup>
 import { VueComponent as Readme } from '../README.md'
-
-export default {
-  components: {
-    Readme
-  }
-}
 </script>
 
 <template>

@@ -1,23 +1,11 @@
-<script>
+<script setup>
 import { formatInitials } from 'linna-util'
 
-export default {
+const text = ref('Some Name Goes Here')
 
-  data () {
-    return {
-      text: 'Some Name Goes Here'
-    }
-  },
-
-  computed: {
-
-    initials () {
-      return formatInitials(this.text)
-    }
-
-  }
-
-}
+const initials = computed(() => {
+  return formatInitials(text.value)
+})
 </script>
 
 <template>

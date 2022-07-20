@@ -1,16 +1,7 @@
-<script>
+<script setup>
 import { formatDate } from 'linna-util'
 
-export default {
-
-  data () {
-    return {
-      renderedDate: formatDate(new Date())
-    }
-  }
-
-}
-
+const renderedDate = formatDate(new Date())
 </script>
 
 <template>
