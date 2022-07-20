@@ -1,14 +1,16 @@
 import { resolve } from 'path'
 
 const devConfig = {
-  alias: {},
 
   // These are only to make early development easier
   // https://v3.nuxtjs.org/getting-started/introduction
-  ssr: false,
-  typescript: {
-    shim: false
-  }
+  // ssr: false,
+  // typescript: {
+  //   shim: false
+  // },
+
+  // Aliases will potentially be added here
+  alias: {}
 }
 
 // Link to local source files when running docs
@@ -36,5 +38,7 @@ if (devConfig.alias['linna-util']) {
   // }
 
 }
+
+console.log('Nuxt is running in dev mode:', devConfig)
 
 export default devConfig

@@ -1,11 +1,5 @@
-<script>
-export default {
-  data () {
-    return {
-      value: 2
-    }
-  }
-}
+<script setup>
+const value = ref(2)
 </script>
 
 <template>

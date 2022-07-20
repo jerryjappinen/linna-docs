@@ -18,9 +18,7 @@ export default {
 
     <h3>Example</h3>
 
-    <p>
-      <Dump :data="dump" />
-    </p>
+    <Dump :data="dump" />
 
   </div>
 </template>

@@ -83,6 +83,7 @@ export default {
         <ul>
           <li v-for="componentPage in componentPages" :key="componentPage">
             <NuxtLink :to="'/linna-vue/components/c-' + componentPage" class="c-layout-default-sidebar-link">
+              <IconVueColor class="c-layout-default-sidebar-icon" />
               <code>{{ componentPage }}</code>
             </NuxtLink>
           </li>
@@ -117,6 +118,7 @@ export default {
   @include flex-fixed;
   border-right-width: 1px;
   width: 18em;
+  max-width: 35%;
 }
 
 .c-layout-default-main {
@@ -136,6 +138,12 @@ export default {
   font-size: 0.9em;
 }
 
+.c-layout-default-sidebar-lib,
+.c-layout-default-sidebar-link {
+  @include flex;
+  @include flex-center;
+}
+
 .c-layout-default-sidebar-lib {
   @include discreet;
   @include no-push-bottom;
@@ -148,9 +156,22 @@ export default {
 }
 
 .c-layout-default-sidebar-link {
+
   &.router-link-active {
     @include bold;
   }
+
+  &:not(.router-link-active):not(:hover):not(:focus) {
+    color: $dark-grey;
+  }
+
+}
+
+.c-layout-default-sidebar-icon {
+  @include flex-fixed;
+  @include push-pad-tight-right;
+  width: 0.75em;
+  height: 0.75em;
 }
 
 </style>
