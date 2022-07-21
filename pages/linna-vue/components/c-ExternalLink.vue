@@ -1,12 +1,5 @@
-<script>
-export default {
-  data () {
-    return {
-      url: 'https://jerryjappinen.com'
-    }
-  }
-
-}
+<script setup>
+const url = 'https://jerryjappinen.com'
 </script>
 
 <template>

@@ -1,15 +1,7 @@
-<script>
-export default {
-
-  methods: {
-
-    onClick () {
-      alert('Click')
-    }
-  }
-
+<script setup>
+const onClick = () => {
+  alert('Click')
 }
-
 </script>
 
 <template>

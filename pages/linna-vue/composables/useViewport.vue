@@ -1,50 +1,56 @@
 <script>
-export default {
+const {
+  breakpoints,
+  hasObtrusiveScrollbars,
+  darkMode,
+  width,
+  height,
+  scroll,
+  scrollX,
+  isScrollingDown,
+  isScrollingUp,
+  centerX,
+  centerY,
+  isScrolled,
+  isScrolledX,
+  isLandscape,
+  isPortrait,
+  currentBreakpointRange,
+  previousBreakpoint,
+  exactBreakpoint,
+  nextBreakpoint,
 
-  data () {
-    return {
-      viewport: useViewport()
-    }
-  },
+  init,
+  uninit,
+  setBreakpoints
+} = useViewport()
 
-  computed: {
+const methods = {
+  init,
+  uninit,
+  setBreakpoints
+}
 
-    methods () {
-      return [
-        'init',
-        'uninit',
-        'setBreakpoints'
-      ]
-    },
-
-    values () {
-      return {
-        breakpoints: this.viewport.breakpoints,
-
-        hasObtrusiveScrollbars: this.viewport.hasObtrusiveScrollbars,
-        darkMode: this.viewport.darkMode,
-        width: this.viewport.width,
-        height: this.viewport.height,
-        scroll: this.viewport.scroll,
-        scrollX: this.viewport.scrollX,
-        isScrollingDown: this.viewport.isScrollingDown,
-        isScrollingUp: this.viewport.isScrollingUp,
-
-        centerX: this.viewport.centerX,
-        centerY: this.viewport.centerY,
-        isScrolled: this.viewport.isScrolled,
-        isScrolledX: this.viewport.isScrolledX,
-        isLandscape: this.viewport.isLandscape,
-        isPortrait: this.viewport.isPortrait,
-        currentBreakpointRange: this.viewport.currentBreakpointRange,
-        previousBreakpoint: this.viewport.previousBreakpoint,
-        exactBreakpoint: this.viewport.exactBreakpoint,
-        nextBreakpoint: this.viewport.nextBreakpoint
-      }
-    }
-
-  }
-
+const values = {
+  breakpoints,
+  hasObtrusiveScrollbars,
+  darkMode,
+  width,
+  height,
+  scroll,
+  scrollX,
+  isScrollingDown,
+  isScrollingUp,
+  centerX,
+  centerY,
+  isScrolled,
+  isScrolledX,
+  isLandscape,
+  isPortrait,
+  currentBreakpointRange,
+  previousBreakpoint,
+  exactBreakpoint,
+  nextBreakpoint
 }
 </script>
 
@@ -66,15 +72,15 @@ export default {
     <p>Automatically initialised on mount.</p>
 
     <table>
-      <tr v-for="(name) in methods" :key="name">
-        <th><code>viewport.{{ name }}()</code></th>
+      <tr v-for="(method, name) in methods" :key="name">
+        <th><code>time.{{ name }}()</code></th>
         <td>
-          <button @click="viewport[name]">Run</button>
+          <button @click="method">Run</button>
         </td>
       </tr>
 
       <tr v-for="(value, name) in values" :key="name">
-        <th><code>viewport.{{ name }}</code></th>
+        <th><code>time.{{ name }}</code></th>
         <td><code>{{ value }}</code></td>
       </tr>
     </table>

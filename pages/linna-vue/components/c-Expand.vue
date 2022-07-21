@@ -1,11 +1,5 @@
-<script>
-export default {
-  data () {
-    return {
-      isExpanded: false
-    }
-  }
-}
+<script setup>
+const isExpanded = ref(false)
 </script>
 
 <template>

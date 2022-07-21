@@ -1,13 +1,7 @@
-<script>
-export default {
-  data () {
-    return {
-      dump: {
-        startDate: '2022-01-01',
-        endDate: '2022-04-01'
-      }
-    }
-  }
+<script setup>
+const dump = {
+  startDate: '2022-01-01',
+  endDate: '2022-04-01'
 }
 </script>
 

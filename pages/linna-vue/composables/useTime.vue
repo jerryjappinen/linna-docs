@@ -1,38 +1,36 @@
 <script>
-export default {
+const {
+  current,
+  currentMillisecond,
+  currentSecond,
+  currentMinute,
+  currentHour,
+  currentDate,
+  intervalDuration,
 
-  data () {
-    return {
-      time: useTime()
-    }
-  },
+  init,
+  uninit,
+  setIntervalDuration,
+  endLoop,
+  startLoop
+} = useTime()
 
-  computed: {
+const methods = {
+  init,
+  uninit,
+  setIntervalDuration,
+  endLoop,
+  startLoop
+}
 
-    methods () {
-      return [
-        'init',
-        'uninit',
-        'setIntervalDuration',
-        'endLoop',
-        'startLoop'
-      ]
-    },
-
-    values () {
-      return {
-        current: this.time.current,
-        currentMillisecond: this.time.currentMillisecond,
-        currentSecond: this.time.currentSecond,
-        currentMinute: this.time.currentMinute,
-        currentHour: this.time.currentHour,
-        currentDate: this.time.currentDate,
-        intervalDuration: this.time.intervalDuration,
-      }
-    }
-
-  }
-
+const values = {
+  current,
+  currentMillisecond,
+  currentSecond,
+  currentMinute,
+  currentHour,
+  currentDate,
+  intervalDuration
 }
 </script>
 
@@ -54,10 +52,10 @@ export default {
     <p>Automatically initialised on mount.</p>
 
     <table>
-      <tr v-for="(name) in methods" :key="name">
+      <tr v-for="(method, name) in methods" :key="name">
         <th><code>time.{{ name }}()</code></th>
         <td>
-          <button @click="time[name]">Run</button>
+          <button @click="method">Run</button>
         </td>
       </tr>
 

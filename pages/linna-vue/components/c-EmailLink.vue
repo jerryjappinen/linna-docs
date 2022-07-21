@@ -1,13 +1,3 @@
-<script>
-export default {
-  data () {
-    return {
-      isLoading: true
-    }
-  }
-}
-</script>
-
 <template>
   <div>
 

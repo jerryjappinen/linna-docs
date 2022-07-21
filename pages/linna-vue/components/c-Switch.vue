@@ -1,11 +1,5 @@
-<script>
-export default {
-  data () {
-    return {
-      value: false
-    }
-  }
-}
+<script setup>
+const value = ref(false)
 </script>
 
 <template>

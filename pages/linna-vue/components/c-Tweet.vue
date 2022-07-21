@@ -1,13 +1,6 @@
-<script>
-export default {
-  data () {
-    return {
-      userName: 'jerryjappinen',
-      tweetId: 1537444796670701568
-    }
-  }
-}
-
+<script setup>
+const userName = 'jerryjappinen'
+const tweetId = 1537444796670701568
 </script>
 
 <template>

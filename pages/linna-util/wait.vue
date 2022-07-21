@@ -1,37 +1,22 @@
-<script>
+<script setup>
 import { wait } from 'linna-util'
 
 const delay = 3000
 
-export default {
+const pings = ref([])
 
-  data () {
-    return {
-      pings: []
-    }
-  },
-
-  mounted () {
-    this.demo()
-  },
-
-  methods: {
-
-    async demo () {
-      for (let i = 0; i < 10; i++) {
-        this.ping()
-        await wait(delay)
-      }
-    },
-
-    ping () {
-      this.pings.push(Math.random())
-    }
-
-  }
-
+const ping = () => {
+  pings.push(Math.random())
 }
 
+const async demo = () => {
+  for (let i = 0; i < 10; i++) {
+    ping()
+    await wait(delay)
+  }
+}
+
+onMounted(demo)
 </script>
 
 <template>

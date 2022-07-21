@@ -1,31 +1,5 @@
-<script>
-export default {
-
-  data () {
-    return {
-      cursor: useCursor()
-    }
-  },
-
-  computed: {
-
-    methods () {
-      return [
-        'init',
-        'uninit'
-      ]
-    },
-
-    values () {
-      return {
-        x: this.cursor.x,
-        y: this.cursor.y
-      }
-    }
-
-  }
-
-}
+<script setup>
+const { x, y, init, uninit } = useCursor()
 </script>
 
 <template>
@@ -46,16 +20,26 @@ export default {
     <p>Automatically initialised on mount.</p>
 
     <table>
-      <tr v-for="(name) in methods" :key="name">
-        <th><code>cursor.{{ name }}()</code></th>
+      <!-- Methods -->
+      <tr>
+        <th><code>cursor.init()</code></th>
         <td>
-          <button @click="cursor[name]">Run</button>
+          <button @click="init">Run</button>
+        </td>
+        <th><code>cursor.uninit()</code></th>
+        <td>
+          <button @click="uninit">Run</button>
         </td>
       </tr>
 
-      <tr v-for="(value, name) in values" :key="name">
-        <th><code>cursor.{{ name }}</code></th>
-        <td><code>{{ value }}</code></td>
+      <!-- Values -->
+      <tr>
+        <th><code>cursor.x</code></th>
+        <td><code>{{ x }}</code></td>
+      </tr>
+      <tr>
+        <th><code>cursor.y</code></th>
+        <td><code>{{ y }}</code></td>
       </tr>
     </table>
 

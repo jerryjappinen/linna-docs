@@ -1,11 +1,5 @@
-<script>
-export default {
-  data () {
-    return {
-      isLoading: true
-    }
-  }
-}
+<script setup>
+const isLoading = ref(true)
 </script>
 
 <template>

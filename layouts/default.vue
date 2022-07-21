@@ -1,16 +1,10 @@
-<script>
-import { sassPages, utilPages, componentPages, composablePages } from '@/config'
-
-export default {
-  data () {
-    return {
-      sassPages,
-      utilPages,
-      componentPages,
-      composablePages
-    }
-  }
-}
+<script setup>
+import {
+  sassPages,
+  utilPages,
+  componentPages,
+  composablePages
+} from '@/config'
 </script>
 
 <template>

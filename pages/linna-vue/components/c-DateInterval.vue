@@ -1,12 +1,6 @@
-<script>
-export default {
-  data () {
-    return {
-      startDate: '2022-01-01',
-      endDate: '2022-04-01'
-    }
-  }
-}
+<script setup>
+const startDate = '2022-01-01'
+const endDate = '2022-04-01'
 </script>
 
 <template>

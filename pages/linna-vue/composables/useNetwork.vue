@@ -1,31 +1,5 @@
 <script>
-export default {
-
-  data () {
-    return {
-      network: useNetwork()
-    }
-  },
-
-  computed: {
-
-    methods () {
-      return [
-        'init',
-        'uninit'
-      ]
-    },
-
-    values () {
-      return {
-        isOnline: this.network.isOnline,
-        isOffline: this.network.isOffline
-      }
-    }
-
-  }
-
-}
+const { isOnline, isOffline } = useNetwork()
 </script>
 
 <template>
@@ -46,16 +20,13 @@ export default {
     <p>Automatically initialised on mount.</p>
 
     <table>
-      <tr v-for="(name) in methods" :key="name">
-        <th><code>network.{{ name }}()</code></th>
-        <td>
-          <button @click="network[name]">Run</button>
-        </td>
+      <tr>
+        <th><code>network.isOnline</code></th>
+        <td><code>{{ isOnline }}</code></td>
       </tr>
-
-      <tr v-for="(value, name) in values" :key="name">
-        <th><code>network.{{ name }}</code></th>
-        <td><code>{{ value }}</code></td>
+      <tr>
+        <th><code>network.isOffline</code></th>
+        <td><code>{{ isOffline }}</code></td>
       </tr>
     </table>
 

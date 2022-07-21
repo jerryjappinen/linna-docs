@@ -1,37 +1,28 @@
-<script>
-export default {
+<script setup>
+const selected = ref(null)
 
-  data () {
-    return {
-      selected: null,
-      options: [
-        {
-          label: 'Foo Bar',
-          value: 'foobar'
-        },
-        {
-          label: 'Group',
-          value: [
-            {
-              label: 'Foo',
-              value: 'foo'
-            },
-            {
-              label: 'bar',
-              value: 'bar'
-            }
-          ]
-        }
-      ]
-    }
+const options = [
+  {
+    label: 'Foo Bar',
+    value: 'foobar'
   },
-
-  methods: {
-    clear () {
-      this.selected = null
-    }
+  {
+    label: 'Group',
+    value: [
+      {
+        label: 'Foo',
+        value: 'foo'
+      },
+      {
+        label: 'bar',
+        value: 'bar'
+      }
+    ]
   }
+]
 
+const clear = () => {
+  selected.value = null
 }
 </script>
 
