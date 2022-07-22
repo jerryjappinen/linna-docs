@@ -2,12 +2,13 @@ import { resolve } from 'path'
 
 const devConfig = {
 
-  // These are only to make early development easier
-  // https://v3.nuxtjs.org/getting-started/introduction
+  // This makes early development faster
   // ssr: false,
-  // typescript: {
-  //   shim: false
-  // },
+
+  // https://v3.nuxtjs.org/getting-started/quick-start#prerequisites
+  typescript: {
+    shim: false
+  },
 
   // Aliases will potentially be added here
   alias: {}

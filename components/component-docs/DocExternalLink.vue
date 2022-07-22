@@ -5,8 +5,6 @@ const url = 'https://jerryjappinen.com'
 <template>
   <div>
 
-    <h2><code>ExternalLink</code></h2>
-
     <table>
       <tr>
         <th><code>here</code></th>

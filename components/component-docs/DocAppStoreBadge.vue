@@ -1,7 +1,11 @@
+<script setup>
+useHead({
+  title: 'AppStoreBadge'
+})
+</script>
+
 <template>
   <div>
-
-    <h2><code>AppStoreBadge</code></h2>
 
     <p>
       <AppStoreBadge />

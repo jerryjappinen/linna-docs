@@ -29,12 +29,6 @@ const clear = () => {
 <template>
   <div>
 
-    <h2><code>Dropdown</code></h2>
-
-    <pre><code>import Dropdown from 'linna-vue/components/Dropdown'</code></pre>
-
-    <h3>Example</h3>
-
     <p>
       Selected: <code>{{ selected }}</code> (<button @click="clear">clear</button>)
     </p>

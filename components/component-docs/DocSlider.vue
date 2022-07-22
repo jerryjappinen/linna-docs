@@ -5,10 +5,6 @@ const value = ref(2)
 <template>
   <div>
 
-    <h2><code>Slider</code></h2>
-
-    <h3>Example</h3>
-
     <p>
       <Slider v-model="value" :max="100" />
     </p>

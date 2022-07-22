@@ -5,8 +5,6 @@ const isLoading = ref(true)
 <template>
   <div>
 
-    <h2><code>Ellipsis</code></h2>
-
     <p>
       <label>
         <input type="checkbox" v-model="isLoading" /> <code>loading</code>

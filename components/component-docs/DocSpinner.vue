@@ -1,8 +1,6 @@
 <template>
   <div>
 
-    <h2><code>Spinner</code></h2>
-
     <div class="grid">
       <div>
         <spinner />

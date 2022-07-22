@@ -17,8 +17,6 @@ export default {
 <template>
   <div>
 
-    <h1>Textfield</h1>
-
     <table>
       <tbody>
 

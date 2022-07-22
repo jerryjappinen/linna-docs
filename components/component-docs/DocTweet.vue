@@ -6,10 +6,6 @@ const tweetId = 1537444796670701568
 <template>
   <div>
 
-    <h1>Tweet</h1>
-
-    <h3>Example</h3>
-
     <div class="tweets">
       <Tweet
         :user-name="userName"

@@ -12,6 +12,7 @@ import meta from './meta'
 // import pinia from './pinia'
 // import scripts from './scripts'
 import scss from './scss'
+import sitemap from './sitemap'
 import svg from './svg'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
@@ -25,6 +26,7 @@ const configs = [
   // pinia,
   // scripts,
   scss,
+  sitemap,
   svg,
 
   isDev ? dev : {},

@@ -1,8 +1,6 @@
 <template>
   <div>
 
-    <h2><code>Buttons</code></h2>
-
     <buttons>
       <ClickButton>Foo</ClickButton>
       <ClickButton>Bar</ClickButton>

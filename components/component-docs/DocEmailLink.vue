@@ -1,10 +1,6 @@
 <template>
   <div>
 
-    <h2><code>EmailLink</code></h2>
-
-    <h3>Example</h3>
-
     <p>
       <EmailLink
         to="some.person@email.com"

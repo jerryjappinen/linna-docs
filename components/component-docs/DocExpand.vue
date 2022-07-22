@@ -5,10 +5,6 @@ const isExpanded = ref(false)
 <template>
   <div>
 
-    <h2><code>Expand</code></h2>
-
-    <h3>Example</h3>
-
     <p>
       <Toggle v-model="isExpanded">
         <Expand>
