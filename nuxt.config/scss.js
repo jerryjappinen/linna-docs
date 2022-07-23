@@ -4,7 +4,7 @@ const autoInjectFile = 'styles/shared.scss'
 export default {
 
   // Global CSS (internal)
-  css: ['@/styles/global.scss'],
+  css: ['@/styles/index.scss'],
 
   // Links to static CSS files
   // link: [

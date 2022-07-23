@@ -3,7 +3,6 @@ import { isArray, mergeWith } from 'lodash-es'
 import { isDev } from '../env'
 
 import assets from './assets'
-import base from './base'
 // import env from './env'
 import dev from './dev'
 import linna from './linna'
@@ -14,11 +13,11 @@ import meta from './meta'
 import scss from './scss'
 import sitemap from './sitemap'
 import svg from './svg'
+import viewport from './viewport'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 const configs = [
   assets,
-  base,
   // env,
   linna,
   markdown,
@@ -28,6 +27,7 @@ const configs = [
   scss,
   sitemap,
   svg,
+  viewport,
 
   isDev ? dev : {},
   {
