@@ -14,15 +14,9 @@ const sampleOptions = {
 </script>
 
 <template>
-  <div>
-
-    <h2><code>assets({ ... })</code></h2>
-
-    <pre><code>import { merge, assets } from 'linna-util/nuxt.config'</code></pre>
-
-    <pre><code>defineNuxtConfig(merge(assets(options), { ... }))</code></pre>
-
-    <Dump :data="sampleOptions" />
-
-  </div>
+  <NuxtConfigPage
+    name="assets"
+    args="options"
+    :args-sample="sampleOptions"
+  />
 </template>

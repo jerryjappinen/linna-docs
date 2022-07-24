@@ -90,7 +90,7 @@ import {
 
         <ul>
           <li v-for="nuxtConfigPage in nuxtConfigPages" :key="nuxtConfigPage">
-            <NuxtLink :to="'/linna-vue/nuxtConfigs/' + nuxtConfigPage" class="c-layout-default-sidebar-link">
+            <NuxtLink :to="'/linna-vue/nuxt.config/' + nuxtConfigPage" class="c-layout-default-sidebar-link">
               <code>{{ nuxtConfigPage }}</code>
             </NuxtLink>
           </li>

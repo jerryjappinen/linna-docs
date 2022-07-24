@@ -17,7 +17,7 @@
     "linna-icons": "^0.1.2",
     "linna-sass": "^1.0.1",
     "linna-util": "^6.2.0",
-    "linna-vue": "^0.4.7",
+    "linna-vue": "^0.4.8",
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
