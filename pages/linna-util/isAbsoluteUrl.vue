@@ -1,30 +1,17 @@
-<script>
+<script setup>
 import { isAbsoluteUrl } from 'linna-util'
 
-export default {
-
-  data () {
-    return {
-      urls: [
-        'http://foo.bar',
-        'https://foo.bar',
-        'ftp://foo.bar',
-        '//foo.bar',
-        '/foo.bar',
-        '/myapp.com',
-        'myapp.com',
-        '/path',
-        'path'
-      ]
-    }
-  },
-
-  methods: {
-    isAbsoluteUrl
-  }
-
-}
-
+const urls = [
+  'http://foo.bar',
+  'https://foo.bar',
+  'ftp://foo.bar',
+  '//foo.bar',
+  '/foo.bar',
+  '/myapp.com',
+  'myapp.com',
+  '/path',
+  'path'
+]
 </script>
 
 <template>

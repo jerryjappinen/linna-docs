@@ -1,44 +1,29 @@
-<script>
+<script setup>
 import { tryPromises, wait } from 'linna-util'
+import { onMounted } from 'vue';
 
-export default {
+const results = ref(null)
 
-  data () {
-    return {
-      codeSample,
-      results: null
-    }
-  },
+const tryOne = async () => {
+  await wait(Math.random() * 1000)
 
-  mounted () {
-    this.demo()
-  },
-
-  methods: {
-
-    async demo () {
-      this.results = null
-      this.results = await tryPromises([
-        this.tryOne(),
-        this.tryOne(),
-        this.tryOne()
-      ])
-    },
-
-    async tryOne () {
-      await wait(Math.random() * 1000)
-
-      if (Math.random() > 0.5) {
-        return true
-      }
-
-      throw new Error('Failed randomly')
-    }
-
+  if (Math.random() > 0.5) {
+    return true
   }
 
+  throw new Error('Failed randomly')
 }
 
+const demo = async () => {
+  results.value = null
+  results.value = await tryPromises([
+    tryOne(),
+    tryOne(),
+    tryOne()
+  ])
+}
+
+onMounted(demo)
 </script>
 
 <template>

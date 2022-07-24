@@ -1,17 +1,10 @@
-<script>
-export default {
-  data () {
-    return {
-      value: 'Test',
-      emptyValue: '',
-      multilineValue: 'Multiline test',
-      emailValue: 'foo@bar.com',
-      numberValue: 4,
-      monthValue: ''
-    }
-  }
-}
-
+<script setup>
+const value = ref('Test')
+const emptyValue = ref('')
+const multilineValue = ref('Multiline test')
+const emailValue = ref('foo@bar.com')
+const numberValue = ref(4)
+const monthValue = ref('')
 </script>
 
 <template>
@@ -114,7 +107,7 @@ export default {
           </td>
           <td colspan="2">
             <Textfield
-              v-model="value"
+              v-model="multilineValue"
               :multiline="true"
             />
           </td>

@@ -1,19 +1,7 @@
-<script>
+<script setup>
 import { formatSlug } from 'linna-util'
 
-export default {
-
-  data () {
-    const string = 'Foo bar foo bar'
-
-    return {
-      string,
-      renderedSlug: formatSlug(string)
-    }
-  }
-
-}
-
+const string = 'Foo bar foo bar'
 </script>
 
 <template>
@@ -28,7 +16,7 @@ export default {
     <table>
       <tr>
         <td>{{ string }}</td>
-        <td>{{ renderedSlug }}</td>
+        <td>{{ formatSlug(string) }}</td>
       </tr>
     </table>
 

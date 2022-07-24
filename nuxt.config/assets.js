@@ -18,9 +18,13 @@ const metaTags = []
 
 // Icons
 if (faviconPath) {
+  const faviconType = faviconPath.indexOf('.svg') > -1
+    ? 'svg+xml'
+    : 'png'
+
   linkTags.push({
     rel: 'icon',
-    type: 'image/' + (faviconPath.indexOf('.svg') > -1 ? 'svg+xml' : 'png'),
+    type: 'image/' + faviconType,
     href: '/' + faviconPath
   })
 }
@@ -50,7 +54,7 @@ if (appleTouchIconPath) {
 
 
 
-// Cover image
+// Cover image for sharing
 if (coverImagePath) {
 
   // Twitter cards
@@ -100,9 +104,8 @@ if (manifestPath) {
 
 
 
-// https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
+// https://v3.nuxtjs.org/docs/directory-structure/nuxt.config#meta
 export default {
-  // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config#meta
   meta: {
     link: links,
     meta: metaTags

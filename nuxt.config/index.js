@@ -17,17 +17,19 @@ import viewport from './viewport'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 const configs = [
+  markdown,
+  scss,
+  svg,
+
   assets,
   // env,
-  linna,
-  markdown,
   meta,
   // pinia,
   // scripts,
-  scss,
   sitemap,
-  svg,
   viewport,
+
+  linna,
 
   isDev ? dev : {},
   {

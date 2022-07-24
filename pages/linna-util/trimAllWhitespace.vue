@@ -1,11 +1,7 @@
-<script>
+<script setup>
 import { trimAllWhitespace } from 'linna-util'
 
-export default {
-
-  data () {
-    return {
-      string: `
+const string = `
 
 
 
@@ -16,16 +12,7 @@ bar     bar
 
 
 
-      `
-    }
-  },
-
-  methods: {
-    trimAllWhitespace
-  }
-
-}
-
+  `
 </script>
 
 <template>

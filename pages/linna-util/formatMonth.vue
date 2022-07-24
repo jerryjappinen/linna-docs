@@ -1,16 +1,5 @@
-<script>
+<script setup>
 import { formatMonth } from 'linna-util'
-
-export default {
-
-  data () {
-    return {
-      renderedDate: formatMonth(new Date())
-    }
-  }
-
-}
-
 </script>
 
 <template>
@@ -27,7 +16,7 @@ export default {
     <table>
       <tr>
         <td><code>formatMonth(new Date())</code></td>
-        <td>{{ renderedDate }}</td>
+        <td>{{ formatMonth(new Date()) }}</td>
       </tr>
     </table>
 

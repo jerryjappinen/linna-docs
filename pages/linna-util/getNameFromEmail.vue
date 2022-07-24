@@ -1,40 +1,22 @@
-<script>
+<script setup>
 import { getNameFromEmail } from 'linna-util'
 
-export default {
+const testStrings = [
+  '',
+  '.com',
+  '@',
+  'foo',
+  'foo@',
+  'foo.bar@',
+  'foo.bar@something',
+  'foo.bar@something.',
+  'foo.bar@something.com'
+]
 
-  data () {
-    return {
-      testStrings: [
-        '',
-        '.com',
-        '@',
-        'foo',
-        'foo@',
-        'foo.bar@',
-        'foo.bar@something',
-        'foo.bar@something.',
-        'foo.bar@something.com'
-      ]
-    }
-  },
-
-  computed: {
-
-    names () {
-      const names = {}
-
-      this.testStrings.forEach((testString) => {
-        names[testString] = getNameFromEmail(testString)
-      })
-
-      return names
-    }
-
-  }
-
-}
-
+const names = {}
+testStrings.forEach((testString) => {
+  names[testString] = getNameFromEmail(testString)
+})
 </script>
 
 <template>

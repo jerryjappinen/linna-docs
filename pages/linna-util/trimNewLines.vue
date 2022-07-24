@@ -1,11 +1,7 @@
-<script>
+<script setup>
 import { trimNewLines } from 'linna-util'
 
-export default {
-
-  data () {
-    return {
-      string: `
+const string = `
 
 
 
@@ -17,15 +13,6 @@ bar     bar
 
 
       `
-    }
-  },
-
-  methods: {
-    trimNewLines
-  }
-
-}
-
 </script>
 
 <template>

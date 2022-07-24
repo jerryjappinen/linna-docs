@@ -1,25 +1,10 @@
-<script>
+<script setup>
 import { getGravatarImageUrl } from 'linna-util'
 
-export default {
+const email = ref('eiskis@gmail.com')
+const size = ref(128)
 
-  data () {
-    return {
-      email: 'eiskis@gmail.com',
-      size: 128
-    }
-  },
-
-  computed: {
-
-    imageUrl () {
-      return getGravatarImageUrl(this.email, this.size)
-    }
-
-  }
-
-}
-
+const imageUrl = computed(getGravatarImageUrl(email.value, size.value))
 </script>
 
 <template>

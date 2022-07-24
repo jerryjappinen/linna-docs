@@ -1,24 +1,7 @@
-<script>
+<script setup>
 import { isEmail } from 'linna-util'
 
-export default {
-
-  data () {
-    return {
-      demo: 'foo@bar.io'
-    }
-  },
-
-  computed: {
-
-    demoIsEmail () {
-      return isEmail(this.demo)
-    }
-
-  }
-
-}
-
+const demo = ref('foo@bar.io')
 </script>
 
 <template>
@@ -32,7 +15,7 @@ export default {
 
     <p>
       <input v-model="demo">
-      {{ demoIsEmail }}
+      {{ isEmail(demo.value) }}
     </p>
 
   </div>

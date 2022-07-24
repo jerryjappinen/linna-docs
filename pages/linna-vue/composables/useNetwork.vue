@@ -1,5 +1,5 @@
-<script>
-const { isOnline, isOffline } = useNetwork()
+<script setup>
+const network = useNetwork()
 </script>
 
 <template>
@@ -7,13 +7,9 @@ const { isOnline, isOffline } = useNetwork()
 
     <h2><code>network</code></h2>
 
-    <pre><code>import useNetwork from 'linna-vue/composables/network'</code></pre>
+    <pre><code>import useNetwork from 'linna-vue/composables/useNetwork'</code></pre>
 
-    <pre><code>data () {
-  return {
-    network: useNetwork()
-  }
-}</code></pre>
+    <pre><code>const network = useNetwork()</code></pre>
 
     <h3>Example</h3>
 
@@ -22,11 +18,11 @@ const { isOnline, isOffline } = useNetwork()
     <table>
       <tr>
         <th><code>network.isOnline</code></th>
-        <td><code>{{ isOnline }}</code></td>
+        <td><code>{{ network.isOnline }}</code></td>
       </tr>
       <tr>
         <th><code>network.isOffline</code></th>
-        <td><code>{{ isOffline }}</code></td>
+        <td><code>{{ network.isOffline }}</code></td>
       </tr>
     </table>
 

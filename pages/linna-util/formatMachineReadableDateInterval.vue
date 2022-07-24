@@ -1,16 +1,5 @@
-<script>
+<script setup>
 import { formatMachineReadableDateTime } from 'linna-util'
-
-export default {
-
-  data () {
-    return {
-      renderedDate: formatMachineReadableDateTime(new Date())
-    }
-  }
-
-}
-
 </script>
 
 <template>
@@ -27,7 +16,7 @@ export default {
     <table>
       <tr>
         <td><code>formatMachineReadableDateTime(new Date())</code></td>
-        <td>{{ renderedDate }}</td>
+        <td>{{ formatMachineReadableDateTime(new Date()) }}</td>
       </tr>
     </table>
 
