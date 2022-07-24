@@ -28,15 +28,11 @@ const formattedFileSizes = fileSizes.map(formatFileSize)
 </script>
 
 <template>
-  <div>
-
-    <h2><code>formatFileSize(bytes)</code></h2>
-
-    <pre><code>import { formatFileSize } from 'linna-util'</code></pre>
-
+  <LinnaUtilPage
+    name="formatFileSize"
+    args="fileSizeInBytes"
+  >
     <p>Format a file size in bytes to be human readable.</p>
-
-    <h3>Example</h3>
 
     <table>
       <tbody>
@@ -46,6 +42,5 @@ const formattedFileSizes = fileSizes.map(formatFileSize)
         </tr>
       </tbody>
     </table>
-
-  </div>
+  </LinnaUtilPage>
 </template>

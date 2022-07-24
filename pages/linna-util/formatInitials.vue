@@ -9,13 +9,11 @@ const initials = computed(() => {
 </script>
 
 <template>
-  <div>
-
-    <h2><code>formatInitials(string)</code></h2>
-
-    <pre><code>import { formatInitials } from 'linna-util'</code></pre>
-
-    <h3>Example</h3>
+  <LinnaUtilPage
+    name="formatInitials"
+    args="string"
+    args="lodash-es"
+  >
 
     <p>
       <label>
@@ -28,5 +26,5 @@ const initials = computed(() => {
       Corresponding initials: <code>{{ initials }}</code>
     </p>
 
-  </div>
+  </LinnaUtilPage>
 </template>

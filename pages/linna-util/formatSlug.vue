@@ -5,20 +5,16 @@ const string = 'Foo bar foo bar'
 </script>
 
 <template>
-  <div>
-
-    <h2><code>formatSlug(string)</code></h2>
-
-    <pre><code>import { formatSlug } from 'linna-util'</code></pre>
-
-    <h3>Example</h3>
-
+  <LinnaUtilPage
+    name="formatSlug"
+    args="string"
+    deps="lodash-es"
+  >
     <table>
       <tr>
         <td>{{ string }}</td>
         <td>{{ formatSlug(string) }}</td>
       </tr>
     </table>
-
-  </div>
+  </LinnaUtilPage>
 </template>

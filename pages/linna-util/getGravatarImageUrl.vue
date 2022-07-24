@@ -1,5 +1,6 @@
 <script setup>
 import { getGravatarImageUrl } from 'linna-util'
+import LinnaUtilPage from '../../components/LinnaUtilPage.vue';
 
 const email = ref('eiskis@gmail.com')
 const size = ref(128)
@@ -8,16 +9,11 @@ const imageUrl = computed(getGravatarImageUrl(email.value, size.value))
 </script>
 
 <template>
-  <div>
-
-    <h2><code>getGravatarImageUrl(email, size)</code></h2>
-
-    <pre><code>npm i md5</code></pre>
-
-    <pre><code>import { getGravatarImageUrl } from 'linna-util'</code></pre>
-
-    <h3>Example</h3>
-
+  <LinnaUtilPage
+    getGravatarImageUrl=""
+    :args="['email', 'size']"
+    deps="md5"
+  >
     <p>
       <input v-model=" email">
 
@@ -30,6 +26,5 @@ const imageUrl = computed(getGravatarImageUrl(email.value, size.value))
     <p>
       <img :src="imageUrl">
     </p>
-
-  </div>
+  </LinnaUtilPage>
 </template>

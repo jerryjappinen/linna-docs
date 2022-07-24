@@ -15,12 +15,10 @@ const urls = [
 </script>
 
 <template>
-  <div>
-
-    <h2><code>getDomain(url)</code></h2>
-
-    <pre><code>import { getDomain } from 'linna-util'</code></pre>
-
+  <LinnaUtilPage
+    name="getDomain"
+    args="url"
+  >
     <table>
       <tbody>
 
@@ -43,6 +41,5 @@ const urls = [
 
       </tbody>
     </table>
-
-  </div>
+  </LinnaUtilPage>
 </template>

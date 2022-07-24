@@ -14,22 +14,15 @@ const renderedDateInterval5 = formatDateInterval(oldDate4, oldDate1)
 </script>
 
 <template>
-  <div>
-
-    <h2><code>formatDateInterval(olderDate, newerDate)</code></h2>
-
-    <pre><code>npm i date-fns</code></pre>
-
-    <pre><code>import { formatDateInterval } from 'linna-util'</code></pre>
-
-    <h3>Example</h3>
-
-    <p>
+  <LinnaUtilPage
+    name="formatDateInterval"
+    :args="['olderDate', 'newerDate']"
+    deps="date-fns"
+  >
     <pre><code>const oldDate1 = new Date('2018-01-01 22:22:22')
 const oldDate2 = new Date('2018-01-02 22:22:22')
 const oldDate3 = new Date('2018-02-02 22:22:22')
 const oldDate4 = new Date('2019-02-02 22:22:22')</code></pre>
-    </p>
 
     <table>
 
@@ -59,6 +52,5 @@ const oldDate4 = new Date('2019-02-02 22:22:22')</code></pre>
       </tr>
 
     </table>
-
-  </div>
+  </LinnaUtilPage>
 </template>
