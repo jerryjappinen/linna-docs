@@ -11,7 +11,7 @@ const imageUrl = computed(getGravatarImageUrl(email.value, size.value))
 <template>
   <LinnaUtilPage
     getGravatarImageUrl=""
-    :args="['email', 'size']"
+    :args="['email', 'size', 'fallbackImageUrl']"
     deps="md5"
   >
     <p>

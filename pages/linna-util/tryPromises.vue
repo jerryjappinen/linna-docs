@@ -1,6 +1,5 @@
 <script setup>
 import { tryPromises, wait } from 'linna-util'
-import { onMounted } from 'vue';
 
 const results = ref(null)
 
@@ -27,12 +26,11 @@ onMounted(demo)
 </script>
 
 <template>
-  <div>
-
-    <h2><code>async tryPromises(promise1, promise2, ...)</code></h2>
-
-    <pre><code>import { tryPromises } from 'linna-util'</code></pre>
-
+  <LinnaUtilPage
+    name="tryPromises"
+    :args="['promise1', 'promise2', '...']"
+    :async="true"
+  >
     <p>
       Wait for multiple promises in parallel, but always resolve even if some promises fail. Failed promises resolve
       with <code>undefined</code>. Wraps <code>Promise.all</code> but doesn't throw an error.
@@ -68,5 +66,5 @@ await tryPromises([
       Waiting...
     </p>
 
-  </div>
+  </LinnaUtilPage>
 </template>

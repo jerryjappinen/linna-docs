@@ -16,12 +16,10 @@ bar     bar
 </script>
 
 <template>
-  <div>
-
-    <h2><code>trimAllWhitespace(string)</code></h2>
-
-    <pre><code>import { trimAllWhitespace } from 'linna-util'</code></pre>
-
+  <LinnaUtilPage
+    name="trimAllWhitespace"
+    args="string"
+  >
     <p>
       String with copious amounts of whitespace like this
     </p>
@@ -33,6 +31,5 @@ bar     bar
     </p>
 
     <pre><code>{{ trimAllWhitespace(string) }}</code></pre>
-
-  </div>
+  </LinnaUtilPage>
 </template>

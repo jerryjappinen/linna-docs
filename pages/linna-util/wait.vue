@@ -9,7 +9,7 @@ const ping = () => {
   pings.push(Math.random())
 }
 
-const async demo = () => {
+const demo = async () => {
   for (let i = 0; i < 10; i++) {
     ping()
     await wait(delay)
@@ -20,12 +20,11 @@ onMounted(demo)
 </script>
 
 <template>
-  <div>
-
-    <h2><code>async wait(delay: 2000)</code></h2>
-
-    <pre><code>import { wait } from 'linna-util'</code></pre>
-
+  <LinnaUtilPage
+    name="wait"
+    :args="['delay: 1000']"
+    :async="true"
+  >
     <p>
       Delay resolution of asynchronous code. This is mostly useful for debugging and testing.
     </p>
@@ -47,5 +46,5 @@ function async demo () {
 
     <p>{{ pings }}</p>
 
-  </div>
+  </LinnaUtilPage>
 </template>

@@ -7,7 +7,7 @@ const renderedDate = formatMachineReadableDate(new Date())
 <template>
   <LinnaUtilPage
     name="formatMachineReadableDate"
-    args="date"
+    args="date: new Date()"
     deps="date-fns"
   >
     <table>

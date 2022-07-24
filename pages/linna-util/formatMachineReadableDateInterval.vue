@@ -6,7 +6,7 @@ import LinnaUtilPage from '../../components/LinnaUtilPage.vue';
 <template>
   <LinnaUtilPage
     name="formatMachineReadableDateTime"
-    args="date"
+    args="date: new Date()"
     deps="date-fns"
   >
     <table>

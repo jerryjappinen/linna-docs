@@ -20,14 +20,11 @@ testStrings.forEach((testString) => {
 </script>
 
 <template>
-  <div>
-
-    <h2><code>getNameFromEmail(email)</code></h2>
-
-    <pre><code>import { getNameFromEmail } from 'linna-util'</code></pre>
-
-    <h3>Example</h3>
-
+  <LinnaUtilPage
+    name="getNameFromEmail"
+    args="email"
+    deps="lodash-es"
+  >
     <table>
       <tbody>
         <tr
@@ -40,6 +37,5 @@ testStrings.forEach((testString) => {
         </tr>
       </tbody>
     </table>
-
-  </div>
+  </LinnaUtilPage>
 </template>

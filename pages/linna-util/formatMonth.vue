@@ -5,7 +5,7 @@ import { formatMonth } from 'linna-util'
 <template>
   <LinnaUtilPage
     name="formatMonth"
-    args="date"
+    args="date: new Date()"
     deps="date-fns"
   >
     <table>

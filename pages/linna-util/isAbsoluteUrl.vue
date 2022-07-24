@@ -15,14 +15,10 @@ const urls = [
 </script>
 
 <template>
-  <div>
-
-    <h2><code>isAbsoluteUrl(urlString)</code></h2>
-
-    <pre><code>import { isAbsoluteUrl } from 'linna-util'</code></pre>
-
-    <h3>Example</h3>
-
+  <LinnaUtilPage
+    name="isAbsoluteUrl"
+    args="urlString"
+  >
     <table>
       <tbody>
         <tr v-for="(url, i) in urls" :key="i">
@@ -31,6 +27,5 @@ const urls = [
         </tr>
       </tbody>
     </table>
-
-  </div>
+  </LinnaUtilPage>
 </template>

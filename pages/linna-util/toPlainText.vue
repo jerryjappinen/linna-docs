@@ -6,16 +6,11 @@ const demo2 = '<h1>Foo</h1>\n<p>Bar <strong>foo</strong></p>'
 </script>
 
 <template>
-  <div>
-
-    <h2><code>toPlainText(string)</code></h2>
-
-    <pre><code>npm i remove-markdown</code></pre>
-
-    <pre><code>import { toPlainText } from 'linna-util'</code></pre>
-
-    <h3>Example</h3>
-
+  <LinnaUtilPage
+    name="toPlainText"
+    args="string"
+    deps="remove-markdown"
+  >
     <table>
       <tr>
         <td>
@@ -30,6 +25,5 @@ const demo2 = '<h1>Foo</h1>\n<p>Bar <strong>foo</strong></p>'
         <td>{{ toPlainText(this.demo2) }}</td>
       </tr>
     </table>
-
-  </div>
+  </LinnaUtilPage>
 </template>

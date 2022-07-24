@@ -12,7 +12,13 @@ const props = defineProps = ({
   },
 
   deps: {
-    type: [Array, String]
+    type: [Array, String],
+    default: null
+  },
+
+  async: {
+    type: Boolean,
+    default: false
   }
 
 })
@@ -24,7 +30,7 @@ const utilDeps = props.deps ? (Array.isArray(props.deps) ? props.deps : [props.d
 <template>
   <div>
 
-    <h2><code>{{ props.name }}({{ utilArgs.join(', ') }})</code></h2>
+    <h2><code>{{ async ? 'async ' : '' }}{{ props.name }}({{ utilArgs.join(', ') }})</code></h2>
 
     <pre v-if="utilDeps.length"><code>npm i {{ utilDeps.join(' ') }}</code></pre>
 
