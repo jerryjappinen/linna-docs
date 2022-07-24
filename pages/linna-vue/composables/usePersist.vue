@@ -11,6 +11,7 @@ const iterate = () => {
 <template>
   <ComposablePage
     name="persist"
+    args="persistingValue"
   >
 
     <p>

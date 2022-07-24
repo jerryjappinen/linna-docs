@@ -49,6 +49,14 @@ const composableMethods = props.methods
 
     <pre><code>const {{ props.name }} = {{ useName }}()</code></pre>
 
+    <p>
+      <ExternalLink :href="`https://github.com/jerryjappinen/linna-vue/blob/master/composables/${useName}.js`">
+        <Icon>
+          <IconGithub /> Source
+        </Icon>
+      </ExternalLink>
+    </p>
+
 
 
     <template v-if="composableProps">

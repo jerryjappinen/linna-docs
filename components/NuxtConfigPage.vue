@@ -23,6 +23,7 @@ const props = defineProps = ({
 
 })
 
+const configName = props.name
 const configArgs = props.args ? (Array.isArray(props.args) ? props.args : [props.args]) : []
 const configArgSamples = props.argSamples ? (Array.isArray(props.argSamples) ? props.argSamples : [props.argSamples]) : []
 const configDeps = props.deps ? (Array.isArray(props.deps) ? props.deps : [props.deps]) : []
@@ -31,7 +32,7 @@ const configDeps = props.deps ? (Array.isArray(props.deps) ? props.deps : [props
 <template>
   <div>
 
-    <h2><code>{{ props.name }}({{ configArgs.join(', ') }})</code></h2>
+    <h2><code>{{ configName }}({{ configArgs.join(', ') }})</code></h2>
 
     <pre v-if="configDeps.length"><code>npm i -D {{ configDeps.join(' ') }}</code></pre>
 
@@ -45,7 +46,15 @@ const configDeps = props.deps ? (Array.isArray(props.deps) ? props.deps : [props
       />
     </template>
 
-    <pre><code>defineNuxtConfig(merge({{ props.name }}({{ configArgs.join(', ') }}), { ... }))</code></pre>
+    <pre><code>defineNuxtConfig(merge({{ configName }}({{ configArgs.join(', ') }}), { ... }))</code></pre>
+
+    <p>
+      <ExternalLink :href="`https://github.com/jerryjappinen/linna-vue/blob/master/nuxt.config/${configName}.js`">
+        <Icon>
+          <IconGithub /> Source
+        </Icon>
+      </ExternalLink>
+    </p>
 
     <slot />
 

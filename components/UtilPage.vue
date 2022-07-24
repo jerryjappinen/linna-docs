@@ -36,6 +36,14 @@ const utilDeps = props.deps ? (Array.isArray(props.deps) ? props.deps : [props.d
 
     <pre><code>import { {{ props.name }} } from 'linna-util'</code></pre>
 
+    <p>
+      <ExternalLink :href="`https://github.com/jerryjappinen/linna-util/blob/master/src/${name}.js`">
+        <Icon>
+          <IconGithub /> Source
+        </Icon>
+      </ExternalLink>
+    </p>
+
     <slot />
 
   </div>
