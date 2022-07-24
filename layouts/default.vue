@@ -3,7 +3,8 @@ import {
   sassPages,
   utilPages,
   componentPages,
-  composablePages
+  composablePages,
+  nuxtConfigPages
 } from '@/config'
 </script>
 
@@ -59,6 +60,19 @@ import {
         </ul>
 
         <h3 class="c-layout-default-sidebar-lib">
+          <code>linna-vue/components/</code>
+        </h3>
+
+        <ul>
+          <li v-for="componentPage in componentPages" :key="componentPage">
+            <NuxtLink :to="'/linna-vue/components/c-' + componentPage" class="c-layout-default-sidebar-link">
+              <IconVueColor class="c-layout-default-sidebar-icon" />
+              <code>{{ componentPage }}</code>
+            </NuxtLink>
+          </li>
+        </ul>
+
+        <h3 class="c-layout-default-sidebar-lib">
           <code>linna-vue/composables/</code>
         </h3>
 
@@ -71,14 +85,13 @@ import {
         </ul>
 
         <h3 class="c-layout-default-sidebar-lib">
-          <code>linna-vue/components/</code>
+          <code>linna-vue/nuxt.config/</code>
         </h3>
 
         <ul>
-          <li v-for="componentPage in componentPages" :key="componentPage">
-            <NuxtLink :to="'/linna-vue/components/c-' + componentPage" class="c-layout-default-sidebar-link">
-              <IconVueColor class="c-layout-default-sidebar-icon" />
-              <code>{{ componentPage }}</code>
+          <li v-for="nuxtConfigPage in nuxtConfigPages" :key="nuxtConfigPage">
+            <NuxtLink :to="'/linna-vue/nuxtConfigs/' + nuxtConfigPage" class="c-layout-default-sidebar-link">
+              <code>{{ nuxtConfigPage }}</code>
             </NuxtLink>
           </li>
         </ul>

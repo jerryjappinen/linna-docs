@@ -32,6 +32,7 @@ export const sassPages = [
   'devices',
   'shadow'
 ]
+
 export const utilPages = [
   'formatDate',
   'formatDateInterval',
@@ -52,7 +53,6 @@ export const utilPages = [
   'trimWhitespace',
   'tryPromises',
   'wait'
-
 ]
 
 export const componentPages = [
@@ -83,4 +83,16 @@ export const composablePages = [
   'usePersist',
   'useTime',
   'useViewport'
+]
+
+export const nuxtConfigPages = [
+  'assets'
+  // 'linna',
+  // 'markdown',
+  // 'meta',
+  // 'pinia',
+  // 'scripts'
+  // 'scss'
+  // 'sitemap'
+  // 'viewport'
 ]

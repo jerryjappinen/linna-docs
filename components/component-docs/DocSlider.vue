@@ -3,11 +3,5 @@ const value = ref(2)
 </script>
 
 <template>
-  <div>
-
-    <p>
-      <Slider v-model="value" :max="100" />
-    </p>
-
-  </div>
+  <Slider v-model="value" :min="1" :max="100" :step="1" />
 </template>
