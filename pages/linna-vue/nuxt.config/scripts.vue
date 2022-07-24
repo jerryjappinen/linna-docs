@@ -17,7 +17,7 @@ const scriptTags = [
     deps="lodash-es"
   >
     <p>
-      Add script tags to the site that link to external assets. Will be async by default, but you can override this by passing an object with the desired attributes.
+      <strong>Add static script tags to your site.</strong> Will be async by default, but you can override this by passing an object with the desired attributes.
     </p>
 
     <p>

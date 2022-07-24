@@ -25,11 +25,11 @@
         <IconFigma />
       </Icon>
 
-      <Icon size="medium">
+      <Icon>
         <IconCheck />
       </Icon>
 
-      <Icon color="true">
+      <Icon>
         <IconCheck />
       </Icon>
     </p>

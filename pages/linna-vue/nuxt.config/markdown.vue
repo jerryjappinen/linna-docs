@@ -8,10 +8,14 @@ const sampleOptions = {
     name="markdown"
     args="markdownItOptions"
     :args-sample="sampleOptions"
-    deps="vite-plugin-markdown"
+    :deps="['vite-plugin-markdown', 'markdown-it']"
   >
     <p>
-      Add support for Markdown imports. See <ExternalLink href="markdownIthttps://www.google.com/search?q=markdownIt">markdownIt docs</ExternalLink> for supported options.
+      <strong>Support for Markdown imports.</strong> See <ExternalLink href="https://github.com/markdown-it/markdown-it#init-with-presets-and-options">markdown-it docs</ExternalLink> for supported options.
+    </p>
+
+    <p>
+      Note that you can add markdown-it plugins. You need to install them as dev dependencies. Add <code>plugins: []</code> to the options and they will be loaded.
     </p>
   </NuxtConfigPage>
 </template>

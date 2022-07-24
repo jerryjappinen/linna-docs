@@ -20,7 +20,7 @@ const sampleOptions = {
     :deps="['sass', 'sass-loader']"
   >
     <p>
-      Enable Sass in your Nuxt app.
+      <strong>Support for importing Sass.</strong> Easily enable global styling and sharing mixins and variables throughout the app.
     </p>
   </NuxtConfigPage>
 </template>
