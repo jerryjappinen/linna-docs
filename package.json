@@ -13,6 +13,7 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
+    "@nuxtjs/sitemap": "^2.4.0",
     "date-fns": "^2.29.1",
     "linna-icons": "^0.1.3",
     "linna-sass": "^1.0.1",

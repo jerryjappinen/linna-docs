@@ -88,12 +88,12 @@ export const composablePages = [
 export const nuxtConfigPages = [
   'assets',
   'linna',
-  // 'markdown',
-  // 'meta',
-  // 'pinia',
-  // 'scripts',
-  // 'scss',
-  // 'sitemap',
+  'markdown',
+  'meta',
+  'pinia',
+  'scripts',
+  'scss',
+  'sitemap',
   'svg',
   'viewport'
 ]
