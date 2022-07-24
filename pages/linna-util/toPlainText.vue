@@ -6,7 +6,7 @@ const demo2 = '<h1>Foo</h1>\n<p>Bar <strong>foo</strong></p>'
 </script>
 
 <template>
-  <LinnaUtilPage
+  <UtilPage
     name="toPlainText"
     args="string"
     deps="remove-markdown"
@@ -25,5 +25,5 @@ const demo2 = '<h1>Foo</h1>\n<p>Bar <strong>foo</strong></p>'
         <td>{{ toPlainText(this.demo2) }}</td>
       </tr>
     </table>
-  </LinnaUtilPage>
+  </UtilPage>
 </template>

@@ -15,7 +15,7 @@ const urls = [
 </script>
 
 <template>
-  <LinnaUtilPage
+  <UtilPage
     name="getDomain"
     args="url"
   >
@@ -41,5 +41,5 @@ const urls = [
 
       </tbody>
     </table>
-  </LinnaUtilPage>
+  </UtilPage>
 </template>

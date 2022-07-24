@@ -5,7 +5,7 @@ const demo = ref('foo@bar.io')
 </script>
 
 <template>
-  <LinnaUtilPage
+  <UtilPage
     name="isEmail"
     args="string"
   >
@@ -13,5 +13,5 @@ const demo = ref('foo@bar.io')
       <input v-model="demo">
       {{ isEmail(demo.value) }}
     </p>
-  </LinnaUtilPage>
+  </UtilPage>
 </template>

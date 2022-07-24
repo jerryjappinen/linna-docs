@@ -16,7 +16,7 @@ bar     bar
 </script>
 
 <template>
-  <LinnaUtilPage
+  <UtilPage
     name="trimAllWhitespace"
     args="string"
   >
@@ -31,5 +31,5 @@ bar     bar
     </p>
 
     <pre><code>{{ trimAllWhitespace(string) }}</code></pre>
-  </LinnaUtilPage>
+  </UtilPage>
 </template>

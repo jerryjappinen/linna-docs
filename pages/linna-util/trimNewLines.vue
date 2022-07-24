@@ -16,7 +16,7 @@ bar     bar
 </script>
 
 <template>
-  <LinnaUtilPage
+  <UtilPage
     name="trimNewLines"
     args="string"
   >
@@ -32,5 +32,5 @@ bar     bar
 
     <pre><code>{{ trimNewLines(string) }}</code></pre>
 
-  </LinnaUtilPage>
+  </UtilPage>
 </template>

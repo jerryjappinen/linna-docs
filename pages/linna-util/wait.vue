@@ -20,7 +20,7 @@ onMounted(demo)
 </script>
 
 <template>
-  <LinnaUtilPage
+  <UtilPage
     name="wait"
     :args="['delay: 1000']"
     :async="true"
@@ -46,5 +46,5 @@ function async demo () {
 
     <p>{{ pings }}</p>
 
-  </LinnaUtilPage>
+  </UtilPage>
 </template>

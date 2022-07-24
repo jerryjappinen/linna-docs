@@ -28,7 +28,7 @@ const formattedFileSizes = fileSizes.map(formatFileSize)
 </script>
 
 <template>
-  <LinnaUtilPage
+  <UtilPage
     name="formatFileSize"
     args="fileSizeInBytes"
   >
@@ -42,5 +42,5 @@ const formattedFileSizes = fileSizes.map(formatFileSize)
         </tr>
       </tbody>
     </table>
-  </LinnaUtilPage>
+  </UtilPage>
 </template>

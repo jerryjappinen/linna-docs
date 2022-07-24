@@ -9,7 +9,7 @@ const initials = computed(() => {
 </script>
 
 <template>
-  <LinnaUtilPage
+  <UtilPage
     name="formatInitials"
     args="string"
     args="lodash-es"
@@ -26,5 +26,5 @@ const initials = computed(() => {
       Corresponding initials: <code>{{ initials }}</code>
     </p>
 
-  </LinnaUtilPage>
+  </UtilPage>
 </template>

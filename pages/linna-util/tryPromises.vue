@@ -26,7 +26,7 @@ onMounted(demo)
 </script>
 
 <template>
-  <LinnaUtilPage
+  <UtilPage
     name="tryPromises"
     :args="['promise1', 'promise2', '...']"
     :async="true"
@@ -66,5 +66,5 @@ await tryPromises([
       Waiting...
     </p>
 
-  </LinnaUtilPage>
+  </UtilPage>
 </template>

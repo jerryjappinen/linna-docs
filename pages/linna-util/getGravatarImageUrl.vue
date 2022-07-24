@@ -1,6 +1,6 @@
 <script setup>
 import { getGravatarImageUrl } from 'linna-util'
-import LinnaUtilPage from '../../components/LinnaUtilPage.vue';
+import UtilPage from '../../components/UtilPage.vue';
 
 const email = ref('eiskis@gmail.com')
 const size = ref(128)
@@ -9,7 +9,7 @@ const imageUrl = computed(getGravatarImageUrl(email.value, size.value))
 </script>
 
 <template>
-  <LinnaUtilPage
+  <UtilPage
     getGravatarImageUrl=""
     :args="['email', 'size', 'fallbackImageUrl']"
     deps="md5"
@@ -26,5 +26,5 @@ const imageUrl = computed(getGravatarImageUrl(email.value, size.value))
     <p>
       <img :src="imageUrl">
     </p>
-  </LinnaUtilPage>
+  </UtilPage>
 </template>

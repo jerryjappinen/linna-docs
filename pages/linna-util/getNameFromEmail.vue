@@ -20,7 +20,7 @@ testStrings.forEach((testString) => {
 </script>
 
 <template>
-  <LinnaUtilPage
+  <UtilPage
     name="getNameFromEmail"
     args="email"
     deps="lodash-es"
@@ -37,5 +37,5 @@ testStrings.forEach((testString) => {
         </tr>
       </tbody>
     </table>
-  </LinnaUtilPage>
+  </UtilPage>
 </template>

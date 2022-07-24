@@ -15,7 +15,7 @@ const urls = [
 </script>
 
 <template>
-  <LinnaUtilPage
+  <UtilPage
     name="isAbsoluteUrl"
     args="urlString"
   >
@@ -27,5 +27,5 @@ const urls = [
         </tr>
       </tbody>
     </table>
-  </LinnaUtilPage>
+  </UtilPage>
 </template>

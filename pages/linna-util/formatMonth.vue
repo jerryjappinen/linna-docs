@@ -3,7 +3,7 @@ import { formatMonth } from 'linna-util'
 </script>
 
 <template>
-  <LinnaUtilPage
+  <UtilPage
     name="formatMonth"
     args="date: new Date()"
     deps="date-fns"
@@ -14,5 +14,5 @@ import { formatMonth } from 'linna-util'
         <td>{{ formatMonth(new Date()) }}</td>
       </tr>
     </table>
-  </LinnaUtilPage>
+  </UtilPage>
 </template>

@@ -3,9 +3,9 @@ import { userPrefersDarkMode } from 'linna-util'
 </script>
 
 <template>
-  <LinnaUtilPage name="userPrefersDarkMode">
+  <UtilPage name="userPrefersDarkMode">
     <p>
       <code>userPrefersDarkMode()</code>: {{ userPrefersDarkMode() }}
     </p>
-  </LinnaUtilPage>
+  </UtilPage>
 </template>

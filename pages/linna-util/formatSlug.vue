@@ -5,7 +5,7 @@ const string = 'Foo bar foo bar foo bar'
 </script>
 
 <template>
-  <LinnaUtilPage
+  <UtilPage
     name="formatSlug"
     :args="['string', 'length: 64']"
     deps="lodash-es"
@@ -21,5 +21,5 @@ const string = 'Foo bar foo bar foo bar'
         <td>{{ formatSlug(string, 4) }}</td>
       </tr>
     </table>
-  </LinnaUtilPage>
+  </UtilPage>
 </template>

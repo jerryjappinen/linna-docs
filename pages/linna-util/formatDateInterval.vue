@@ -14,7 +14,7 @@ const renderedDateInterval5 = formatDateInterval(oldDate4, oldDate1)
 </script>
 
 <template>
-  <LinnaUtilPage
+  <UtilPage
     name="formatDateInterval"
     :args="['olderDate', 'newerDate: new Date()']"
     deps="date-fns"
@@ -52,5 +52,5 @@ const oldDate4 = new Date('2019-02-02 22:22:22')</code></pre>
       </tr>
 
     </table>
-  </LinnaUtilPage>
+  </UtilPage>
 </template>

@@ -5,7 +5,7 @@ const renderedDate = formatDate(new Date())
 </script>
 
 <template>
-  <LinnaUtilPage
+  <UtilPage
     name="formatDate"
     args="date: new Date()"
     deps="date-fns"
@@ -16,5 +16,5 @@ const renderedDate = formatDate(new Date())
         <td>{{ renderedDate }}</td>
       </tr>
     </table>
-  </LinnaUtilPage>
+  </UtilPage>
 </template>

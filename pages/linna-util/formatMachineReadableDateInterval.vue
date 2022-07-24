@@ -1,10 +1,10 @@
 <script setup>
 import { formatMachineReadableDateTime } from 'linna-util'
-import LinnaUtilPage from '../../components/LinnaUtilPage.vue';
+import UtilPage from '../../components/UtilPage.vue';
 </script>
 
 <template>
-  <LinnaUtilPage
+  <UtilPage
     name="formatMachineReadableDateTime"
     args="date: new Date()"
     deps="date-fns"
@@ -15,5 +15,5 @@ import LinnaUtilPage from '../../components/LinnaUtilPage.vue';
         <td>{{ formatMachineReadableDateTime(new Date()) }}</td>
       </tr>
     </table>
-  </LinnaUtilPage>
+  </UtilPage>
 </template>
