@@ -27,12 +27,6 @@ import {
               linna-icons
             </NuxtLink>
           </li>
-
-          <li>
-            <NuxtLink to="/debug" class="c-layout-default-sidebar-link">
-              debug
-            </NuxtLink>
-          </li>
         </ul>
 
         <h3 class="c-layout-default-sidebar-lib">
