@@ -81,6 +81,7 @@ export const composablePages = [
   // 'useGamepad',
   'useNetwork',
   'usePersist',
+  'usePlatform',
   'useTime',
   'useViewport'
 ]

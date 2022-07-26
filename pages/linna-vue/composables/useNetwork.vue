@@ -1,11 +1,14 @@
 <script setup>
-const { isOnline, isOffline } = useNetwork()
+const network = useNetwork()
 </script>
 
 <template>
   <ComposablePage
     name="network"
-    :props="{ isOnline, isOffline }"
+    :props="{
+      isOnline: network.isOnline,
+      isOffline: network.isOffline
+    }"
   >
     <p>Automatically initialised on mount.</p>
   </ComposablePage>

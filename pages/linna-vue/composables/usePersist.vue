@@ -1,7 +1,7 @@
 <script setup>
 const someValue = ref(1)
 
-const { persistKey, persistData, clearPersistData } = usePersist(someValue)
+const persist = usePersist(someValue)
 
 const iterate = () => {
   someValue.value++
@@ -23,13 +23,15 @@ const iterate = () => {
     </p>
 
     <p>
-      <button @click="clearPersistData">Clear</button>
+      <button @click="persist.clear">Clear</button>
     </p>
 
     <Dump :data="{
       someValue,
-      persistKey,
-      persistData
+      persist: {
+        key: persist.key,
+        key: persist.data
+      }
     }" />
 
     <p>

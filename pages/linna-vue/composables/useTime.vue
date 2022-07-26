@@ -1,23 +1,10 @@
 <script setup>
-const {
-  current,
-  currentMillisecond,
-  currentSecond,
-  currentMinute,
-  currentHour,
-  currentDate,
-  intervalDuration,
-
-  init,
-  uninit,
-  setIntervalDuration,
-  endLoop,
-  startLoop
-} = useTime()
+const time = useTime()
 
 const methods = {
-  endLoop,
-  startLoop
+  setIntervalDuration: time.setIntervalDuration,
+  endLoop: time.endLoop,
+  startLoop: time.startLoop
 }
 </script>
 
@@ -25,19 +12,13 @@ const methods = {
   <ComposablePage
     name="time"
     :props="{
-      current,
-      currentMillisecond,
-      currentSecond,
-      currentMinute,
-      currentHour,
-      currentDate,
-      intervalDuration,
-
-      init,
-      uninit,
-      setIntervalDuration,
-      endLoop,
-      startLoop
+      current: time.current,
+      currentMillisecond: time.currentMillisecond,
+      currentSecond: time.currentSecond,
+      currentMinute: time.currentMinute,
+      currentHour: time.currentHour,
+      currentDate: time.currentDate,
+      intervalDuration: time.intervalDuration
     }"
     :methods="methods"
   >

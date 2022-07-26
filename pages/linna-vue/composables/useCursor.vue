@@ -1,11 +1,14 @@
 <script setup>
-const { x, y } = useCursor()
+const cursor = useCursor()
 </script>
 
 <template>
   <ComposablePage
     name="cursor"
-    :props="{ x, y }"
+    :props="{
+      x: cursor.x,
+      y: cursor.y
+    }"
   >
     <p>Automatically initialised on mount.</p>
   </ComposablePage>
