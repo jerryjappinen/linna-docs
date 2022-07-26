@@ -1,0 +1,26 @@
+<script setup>
+import { useDevice } from 'linna-vue/stores/device'
+
+const device = useDevice()
+
+const attrs = {
+  cursor: device.cursor,
+  network: device.network,
+  platform: device.platform,
+  time: device.time,
+  viewport: device.viewport
+}
+</script>
+
+<template>
+  <div>
+    <h3>Pinia store: <code>device</code></h3>
+
+    <pre><code>import { useDevice } from 'linna-vue/stores/device'
+
+const device = useDevice()</code></pre>
+
+    <Dump :data="attrs" />
+
+  </div>
+</template>

@@ -22,6 +22,7 @@ import {
             </NuxtLink>
           </li>
 
+          <!-- Icons -->
           <li>
             <NuxtLink to="/linna-icons" class="c-layout-default-sidebar-link">
               linna-icons
@@ -29,6 +30,7 @@ import {
           </li>
         </ul>
 
+        <!-- Sass -->
         <h3 class="c-layout-default-sidebar-lib">
           <code>linna-sass/</code>
         </h3>
@@ -41,6 +43,7 @@ import {
           </li>
         </ul>
 
+        <!-- Utilities -->
         <h3 class="c-layout-default-sidebar-lib">
           <code>linna-util/</code>
         </h3>
@@ -53,6 +56,7 @@ import {
           </li>
         </ul>
 
+        <!-- Components -->
         <h3 class="c-layout-default-sidebar-lib">
           <code>linna-vue/components/</code>
         </h3>
@@ -66,6 +70,7 @@ import {
           </li>
         </ul>
 
+        <!-- Composables -->
         <h3 class="c-layout-default-sidebar-lib">
           <code>linna-vue/composables/</code>
         </h3>
@@ -78,6 +83,7 @@ import {
           </li>
         </ul>
 
+        <!-- nuxt.config -->
         <h3 class="c-layout-default-sidebar-lib">
           <code>linna-vue/nuxt.config/</code>
         </h3>
@@ -86,6 +92,19 @@ import {
           <li v-for="nuxtConfigPage in nuxtConfigPages" :key="nuxtConfigPage">
             <NuxtLink :to="'/linna-vue/nuxt.config/' + nuxtConfigPage" class="c-layout-default-sidebar-link">
               <code>{{ nuxtConfigPage }}</code>
+            </NuxtLink>
+          </li>
+        </ul>
+
+        <!-- Pinia stores -->
+        <h3 class="c-layout-default-sidebar-lib">
+          <code>linna-vue/stores/</code>
+        </h3>
+
+        <ul>
+          <li v-for="storePage in storePages" :key="storePage">
+            <NuxtLink :to="'/linna-vue/stores/' + storePage" class="c-layout-default-sidebar-link">
+              <code>{{ storePage }}</code>
             </NuxtLink>
           </li>
         </ul>

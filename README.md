@@ -33,6 +33,10 @@ See [`linna-util`](https://npmjs.org/package/linna-util)
 
 See [`linna-vue`](https://npmjs.org/package/linna-vue)
 
+## Using Pinia stores
+
+See [`linna-vue`](https://npmjs.org/package/linna-vue)
+
 ### Icons
 
 Some Vue components rely on SVG icon assets. Since these are user-configurable, you must choose where to get them (or manually use the defaults from `linna-icons`).

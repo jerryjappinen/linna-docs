@@ -98,3 +98,7 @@ export const nuxtConfigPages = [
   'svg',
   'viewport'
 ]
+
+export const storePages = [
+  'device'
+]
