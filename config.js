@@ -88,6 +88,7 @@ export const composablePages = [
 
 export const nuxtConfigPages = [
   'assets',
+  'compression',
   'linna',
   'markdown',
   'meta',
