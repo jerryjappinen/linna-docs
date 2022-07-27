@@ -22,6 +22,7 @@
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
+    "@averjs/nuxt-compression": "^1.2.0",
     "nuxt": "^3.0.0-rc.6",
     "sass": "^1.54.0",
     "sass-loader": "^13.0.2",
