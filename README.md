@@ -74,6 +74,7 @@ If you want, you can easily link it to your local source files for developing ea
 
 ```sh
 # .env
+ALIAS_LINNA_ICONS = "../linna-icons"
 ALIAS_LINNA_SASS = "../linna-sass"
 ALIAS_LINNA_SVG = "../linna-svg"
 ALIAS_LINNA_UTIL = "../linna-util"

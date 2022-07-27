@@ -1,5 +1,3 @@
-import { isDev } from './env'
-
 // Meta data
 export const siteAuthor = 'Jerry Jäppinen'
 export const siteTitle = 'Linna'
@@ -10,17 +8,8 @@ export const siteAccentColor = '#0052cd'
 export const twitterUsername = 'jerryjappinen'
 export const longSiteTitle = `${siteTitle} – ${siteTagline}`
 
-// Assets
-export const coverImagePath = 'cover-image.png'
-export const faviconPath = 'favicon.svg'
-export const icoFaviconPath = null // 'favicon.ico'
-export const appleTouchIconPath = 'apple-touch-icon.png'
-export const maskIconPath = 'mask-icon.svg'
-export const maskIconColor = '#000000'
-export const manifestPath = 'manifest.json'
-
 // Paths
-export const baseUrl = (process.env ? process.env.BASE_URL : null) || isDev
+export const baseUrl = (process.env ? process.env.BASE_URL : null) || isDev()
   ? 'http://localhost:3000'
   : 'https://linna.vercel.app'
 

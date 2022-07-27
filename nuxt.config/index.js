@@ -1,53 +1,76 @@
-import { isArray, mergeWith } from 'lodash-es'
+import { isDev } from 'linna-util'
 
-import { isDev } from '../env'
+import {
+  assets,
+  compression,
+  linna,
+  markdown,
+  meta,
+  pinia,
+  // scripts,
+  scss,
+  sitemap,
+  svg,
+  viewport
+} from 'linna-vue/nuxt.config'
 
-import assets from './assets'
-// import env from './env'
+import {
+  baseUrl,
+  siteAuthor,
+  siteTitle,
+  siteDescription,
+  siteMainColor,
+  twitterUsername,
+  longSiteTitle
+} from './config'
+
 import dev from './dev'
-import linna from './linna'
-import markdown from './markdown'
-import meta from './meta'
-// import pinia from './pinia'
-// import scripts from './scripts'
-import scss from './scss'
-import sitemap from './sitemap'
-import svg from './svg'
-import viewport from './viewport'
+import routes from './routes'
+
+
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
-const configs = [
-  markdown,
-  scss,
-  svg,
+export default [
+  assets({
+    baseUrl,
+    longSiteTitle,
 
-  assets,
-  // env,
-  meta,
-  // pinia,
-  // scripts,
-  sitemap,
-  viewport,
+    coverImage: true,
+    favicon: true,
+    faviconIco: false,
+    appleTouchIcon: false,
+    maskIcon: true,
+    // maskIconColor: '#000',
+    manifest: true
+  }),
 
-  linna,
+  compression(),
+  markdown(),
 
-  isDev ? dev : {},
-  {
+  meta({
+    siteAuthor,
+    siteTitle,
+    longSiteTitle,
+    siteDescription,
+    siteMainColor,
+    facebookAppId,
+    twitterUsername
+  }),
 
-    // Include library components in the compilation
-    build: {
-      transpile: [
-        'linna-vue/components'
-      ]
-    }
+  linna(),
+  pinia(),
+  // scripts(),
+  scss({
+    global: ['styles/index.scss'],
+    shared: ['styles/shared.scss']
+  }),
+  sitemap({
+    baseUrl,
+    routes
+  }),
+  svg(),
+  viewport(),
 
-  }
+  // Dev config locally
+  isDev() ? dev : {}
 ]
-
-// Also merge arrays
-// https://lodash.com/docs/4.17.15#mergeWith
-export default mergeWith({}, ...configs, (objValue, srcValue) => {
-  if (isArray(objValue)) {
-    return objValue.concat(srcValue)
-  }
-})
