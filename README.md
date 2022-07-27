@@ -83,9 +83,9 @@ ALIAS_LINNA_VUE = "../linna-vue"
 
 ## Todo
 
-- [] Get code samples from separate files.
-- [] Add syntax highlighting
-- [] Example page that uses `useLazyAsyncData`
+- [ ] Get code samples from separate files.
+- [ ] Add syntax highlighting
+- [ ] Example page that uses `useLazyAsyncData`
 
 ```js
 const { data: users, pending, refresh, error } = await useLazyFetch(() => `users?page=${page.value}&take=6`, { baseURL: config.API_BASE_URL }

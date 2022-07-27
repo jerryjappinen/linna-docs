@@ -8,25 +8,25 @@ const importString = componentName
 // FIXME: this is ridiculous, but required by resolveComponent to work as expected with dynamic imports
 let is
 switch (componentName) {
-  case 'AppStoreBadge': is = resolveComponent('DocAppStoreBadge'); break;
-  case 'Buttons': is = resolveComponent('DocButtons'); break;
-  case 'ClickButton': is = resolveComponent('DocClickButton'); break;
-  case 'DateInterval': is = resolveComponent('DocDateInterval'); break;
-  case 'Dropdown': is = resolveComponent('DocDropdown'); break;
-  case 'Dump': is = resolveComponent('DocDump'); break;
-  case 'Ellipsis': is = resolveComponent('DocEllipsis'); break;
-  case 'EmailLink': is = resolveComponent('DocEmailLink'); break;
-  case 'Expand': is = resolveComponent('DocExpand'); break;
-  case 'ExternalLink': is = resolveComponent('DocExternalLink'); break;
-  case 'GooglePlayBadge': is = resolveComponent('DocGooglePlayBadge'); break;
-  case 'LiveDuration': is = resolveComponent('DocLiveDuration'); break;
-  case 'MobileWebAppBadge': is = resolveComponent('DocMobileWebAppBadge'); break;
-  case 'Slider': is = resolveComponent('DocSlider'); break;
-  case 'Spinner': is = resolveComponent('DocSpinner'); break;
-  case 'Switch': is = resolveComponent('DocSwitch'); break;
-  case 'Textfield': is = resolveComponent('DocTextfield'); break;
-  case 'Tweet': is = resolveComponent('DocTweet'); break;
-  case 'WebAppBadge': is = resolveComponent('DocWebAppBadge'); break;
+  case 'AppStoreBadge': is = resolveComponent('ComponentDocAppStoreBadge'); break;
+  case 'Buttons': is = resolveComponent('ComponentDocButtons'); break;
+  case 'ClickButton': is = resolveComponent('ComponentDocClickButton'); break;
+  case 'DateInterval': is = resolveComponent('ComponentDocDateInterval'); break;
+  case 'Dropdown': is = resolveComponent('ComponentDocDropdown'); break;
+  case 'Dump': is = resolveComponent('ComponentDocDump'); break;
+  case 'Ellipsis': is = resolveComponent('ComponentDocEllipsis'); break;
+  case 'EmailLink': is = resolveComponent('ComponentDocEmailLink'); break;
+  case 'Expand': is = resolveComponent('ComponentDocExpand'); break;
+  case 'ExternalLink': is = resolveComponent('ComponentDocExternalLink'); break;
+  case 'GooglePlayBadge': is = resolveComponent('ComponentDocGooglePlayBadge'); break;
+  case 'LiveDuration': is = resolveComponent('ComponentDocLiveDuration'); break;
+  case 'MobileWebAppBadge': is = resolveComponent('ComponentDocMobileWebAppBadge'); break;
+  case 'Slider': is = resolveComponent('ComponentDocSlider'); break;
+  case 'Spinner': is = resolveComponent('ComponentDocSpinner'); break;
+  case 'Switch': is = resolveComponent('ComponentDocSwitch'); break;
+  case 'Textfield': is = resolveComponent('ComponentDocTextfield'); break;
+  case 'Tweet': is = resolveComponent('ComponentDocTweet'); break;
+  case 'WebAppBadge': is = resolveComponent('ComponentDocWebAppBadge'); break;
   default: navigateTo('./'); break;
 }
 
