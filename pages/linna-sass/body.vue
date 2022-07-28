@@ -33,5 +33,47 @@
 
     </div>
 
+    <h4>Tables</h4>
+
+    <table>
+      <caption>This is a table</caption>
+
+      <thead>
+        <tr>
+          <th>Foo</th>
+          <th>Bar</th>
+          <th>Foo bar</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th>Foo</th>
+          <td>Bar</td>
+          <td>Foo bar</td>
+        </tr>
+        <tr>
+          <th>Foo</th>
+          <td>Bar</td>
+          <td>Foo bar</td>
+        </tr>
+        <tr>
+          <th>Foo</th>
+          <td>Bar</td>
+          <td>Foo bar</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>Foo</td>
+          <td>Bar</td>
+          <td>Foo bar</td>
+        </tr>
+      </tfoot>
+
+      <caption>This is a table</caption>
+    </table>
+
   </div>
 </template>
