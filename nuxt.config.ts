@@ -1,7 +1,86 @@
 import { defineNuxtConfig } from 'nuxt'
-import { merge } from 'linna-vue/nuxt.config'
 
-import nuxtConfigs from './nuxt.config/index.js'
+import {
+  mergeConfigs,
+
+  dev,
+  linna,
+  // linnaDev,
+
+  assets,
+  // compression,
+  markdown,
+  meta,
+  pinia,
+  // scripts,
+  scss,
+  sitemap,
+  svg,
+  viewport
+} from 'linna-vue/nuxt.config'
+
+import {
+  baseUrl,
+  // facebookAppId,
+  siteAuthor,
+  siteTitle,
+  siteDescription,
+  siteMainColor,
+  twitterUsername,
+  longSiteTitle
+} from './config'
+
+import routes from './routes'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-export default defineNuxtConfig(merge(nuxtConfigs))
+export default defineNuxtConfig(mergeConfigs(
+  assets({
+    baseUrl,
+    longSiteTitle,
+
+    coverImage: true,
+    favicon: true,
+    faviconIco: false,
+    appleTouchIcon: false,
+    maskIcon: true,
+    // maskIconColor: '#000',
+    manifest: true
+  }),
+  markdown(),
+  meta({
+    siteAuthor,
+    siteTitle,
+    longSiteTitle,
+    siteDescription,
+    // facebookAppId,
+    twitterUsername
+  }),
+  pinia(),
+  scss({
+    global: ['styles/index.scss'],
+    shared: ['styles/shared.scss']
+  }),
+  sitemap({
+    baseUrl,
+    routes
+  }),
+  svg(),
+  viewport({
+    themeColor: siteMainColor
+  }),
+
+  linna({
+    icons: false,
+    components: false,
+    composables: false
+  }),
+  // linnaDev(),
+  // compression(),
+
+  // Dev only
+  dev({
+    typescript: {
+      shim: false
+    }
+  })
+))

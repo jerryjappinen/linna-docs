@@ -12,7 +12,7 @@ const initials = computed(() => {
   <UtilPage
     name="formatInitials"
     args="string"
-    args="lodash-es"
+    deps="lodash-es"
   >
 
     <p>

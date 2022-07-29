@@ -1,3 +1,9 @@
+// https://github.com/nuxt/framework/issues/6205
+// import { isDev } from 'linna-util'
+const isDev = () => {
+  return process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'
+}
+
 // Meta data
 export const siteAuthor = 'Jerry Jäppinen'
 export const siteTitle = 'Linna'

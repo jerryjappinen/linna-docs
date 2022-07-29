@@ -1,4 +1,4 @@
-import { componentPages } from '../config'
+import { componentPages } from './config'
 
 // This should be a list of local paths
 export default [
