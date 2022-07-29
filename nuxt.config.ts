@@ -32,8 +32,7 @@ import {
 
 import routes from './routes'
 
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
-export default defineNuxtConfig(mergeConfigs(
+const config = mergeConfigs(
   assets({
     baseUrl,
     longSiteTitle,
@@ -70,9 +69,9 @@ export default defineNuxtConfig(mergeConfigs(
   }),
 
   linna({
-    icons: false,
-    components: false,
-    composables: false
+    icons: true,
+    components: true,
+    composables: true
   }),
   // linnaDev(),
   // compression(),
@@ -83,4 +82,9 @@ export default defineNuxtConfig(mergeConfigs(
       shim: false
     }
   })
-))
+)
+
+console.log(config)
+
+// https://v3.nuxtjs.org/api/configuration/nuxt.config
+export default defineNuxtConfig(config)
