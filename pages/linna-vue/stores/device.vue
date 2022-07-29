@@ -1,15 +1,7 @@
 <script setup>
-import { useDevice } from 'linna-vue/stores/device'
+import useDevice from 'linna-vue/stores/device'
 
 const device = useDevice()
-
-const attrs = {
-  cursor: device.cursor,
-  network: device.network,
-  platform: device.platform,
-  time: device.time,
-  viewport: device.viewport
-}
 </script>
 
 <template>
@@ -20,7 +12,13 @@ const attrs = {
 
 const device = useDevice()</code></pre>
 
-    <Dump :data="attrs" />
+    <Dump :data="{
+      cursor: device.cursor,
+      network: device.network,
+      platform: device.platform,
+      time: device.time,
+      viewport: device.viewport
+    }" />
 
   </div>
 </template>
