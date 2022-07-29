@@ -20,7 +20,8 @@
     "linna-sass": "^1.0.8",
     "linna-util": "^6.2.4",
     "linna-vue": "^0.5.20",
-    "lodash-es": "^4.17.21"
+    "lodash-es": "^4.17.21",
+    "pinia": "^2.0.17"
   },
   "devDependencies": {
     "@averjs/nuxt-compression": "^1.2.0",

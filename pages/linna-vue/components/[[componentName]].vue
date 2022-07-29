@@ -31,9 +31,11 @@ switch (componentName) {
 }
 
 definePageMeta({
-  middleware: [
-    'fallbackToFirstComponentPage'
-  ]
+  middleware (to) {
+    if (!to.params.componentName) {
+      return navigateTo('linna-vue/' + componentPages[0])
+    }
+  }
 })
 
 useHead({

@@ -4,7 +4,8 @@ import {
   utilPages,
   componentPages,
   composablePages,
-  nuxtConfigPages
+  nuxtConfigPages,
+  storePages
 } from '@/config'
 </script>
 
@@ -63,7 +64,7 @@ import {
 
         <ul>
           <li v-for="componentPage in componentPages" :key="componentPage">
-            <NuxtLink :to="'/linna-vue/components/c-' + componentPage" class="c-layout-default-sidebar-link">
+            <NuxtLink :to="'/linna-vue/components/' + componentPage" class="c-layout-default-sidebar-link">
               <IconVueColor class="c-layout-default-sidebar-icon" />
               <code>{{ componentPage }}</code>
             </NuxtLink>
