@@ -14,7 +14,6 @@ const sampleOptions = {
     name="sitemap"
     args="options"
     :args-sample="sampleOptions"
-    deps="@nuxtjs/sitemap"
   >
     <p>
       Define dynamic routes for prerendering and XML sitemap.

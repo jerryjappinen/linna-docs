@@ -9,7 +9,6 @@ const sampleOptions = {
     name="svg"
     args="options"
     :args-sample="sampleOptions"
-    deps="vite-svg-loader"
   >
     <p>
       <strong>Support for importing SVGs as Vue components.</strong> SVGs are passed through SVGO and replacing any usage of the <code>currentColor</code> color value with the CSS keyword <code>currentColor</code>.

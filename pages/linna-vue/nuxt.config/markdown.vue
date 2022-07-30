@@ -8,7 +8,7 @@ const sampleOptions = {
     name="markdown"
     args="markdownItOptions"
     :args-sample="sampleOptions"
-    :deps="['vite-plugin-markdown', 'markdown-it']"
+    :deps="['markdown-it']"
   >
     <p>
       <strong>Support for Markdown imports.</strong> See <ExternalLink href="https://github.com/markdown-it/markdown-it#init-with-presets-and-options">markdown-it docs</ExternalLink> for supported options.
