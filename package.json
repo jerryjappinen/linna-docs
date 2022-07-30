@@ -13,22 +13,17 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "@nuxtjs/sitemap": "^2.4.0",
-    "@pinia/nuxt": "^0.3.1",
     "date-fns": "^2.29.1",
     "linna-icons": "^0.1.6",
     "linna-sass": "^1.0.8",
     "linna-util": "^6.2.4",
-    "linna-vue": "^0.5.23",
+    "linna-vue": "^0.5.25",
     "lodash-es": "^4.17.21",
     "pinia": "^2.0.17"
   },
   "devDependencies": {
-    "@averjs/nuxt-compression": "^1.2.0",
     "nuxt": "^3.0.0-rc.6",
     "sass": "^1.54.0",
-    "sass-loader": "^13.0.2",
-    "vite-plugin-markdown": "^2.0.2",
-    "vite-svg-loader": "^3.4.0"
+    "sass-loader": "^13.0.2"
   }
 }
