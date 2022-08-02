@@ -30,7 +30,7 @@ const iterate = () => {
       someValue,
       persist: {
         key: persist.key,
-        key: persist.data
+        data: persist.data
       }
     }" />
 

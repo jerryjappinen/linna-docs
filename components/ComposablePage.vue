@@ -1,5 +1,5 @@
 <script setup>
-import { upperFirst } from 'lodash-es'
+import upperFirst from 'lodash-es/upperFirst'
 
 const props = defineProps({
 
