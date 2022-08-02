@@ -5,7 +5,6 @@ import {
 
   dev,
   linna,
-  // linnaDev,
 
   assets,
   // compression,
@@ -17,7 +16,7 @@ import {
   sitemap,
   svg,
   viewport
-} from 'linna-vue/nuxt.config'
+} from 'linna-vue/nuxt/config'
 
 import {
   baseUrl,
@@ -73,7 +72,6 @@ const config = mergeConfigs(
     components: true,
     composables: true
   }),
-  // linnaDev(),
   // compression(),
 
   // Dev only
