@@ -1,7 +1,7 @@
 <script setup>
 import { upperFirst } from 'lodash-es'
 
-const props = defineProps = ({
+const props = defineProps({
 
   name: {
     type: String,
