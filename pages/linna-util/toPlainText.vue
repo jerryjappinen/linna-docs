@@ -9,7 +9,6 @@ const demo2 = '<h1>Foo</h1>\n<p>Bar <strong>foo</strong></p>'
   <UtilPage
     name="toPlainText"
     args="string"
-    deps="remove-markdown"
   >
     <table>
       <tr>

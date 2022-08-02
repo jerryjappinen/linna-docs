@@ -70,7 +70,8 @@ const config = mergeConfigs(
   linna({
     icons: true,
     components: true,
-    composables: true
+    composables: true,
+    dev: false
   }),
   // compression(),
 
@@ -82,7 +83,7 @@ const config = mergeConfigs(
   })
 )
 
-console.log(config)
+// console.log(JSON.stringify(config, null, 2))
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig(config)
