@@ -1,4 +1,6 @@
 <script setup>
+import assets from 'linna-vue/nuxt/config/assets'
+
 const sampleOptions = {
   longSiteTitle: 'My Site Title - Doing this and that for you',
   baseUrl: 'https://mysitetitle.com',
@@ -18,5 +20,7 @@ const sampleOptions = {
     name="assets"
     args="options"
     :args-sample="sampleOptions"
-  />
+  >
+    <Dump :data="assets(sampleOptions)" />
+  </NuxtConfigPage>
 </template>

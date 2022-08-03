@@ -1,4 +1,6 @@
 <script setup>
+import sitemap from 'linna-vue/nuxt/config/sitemap'
+
 const sampleOptions = {
   baseUrl: 'https://myappdomain.com',
   exclude: [],
@@ -18,5 +20,7 @@ const sampleOptions = {
     <p>
       Define dynamic routes for prerendering and XML sitemap.
     </p>
+
+    <Dump :data="sitemap(sampleOptions)" />
   </NuxtConfigPage>
 </template>

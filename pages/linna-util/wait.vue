@@ -6,7 +6,7 @@ const delay = 3000
 const pings = ref([])
 
 const ping = () => {
-  pings.push(Math.random())
+  pings.value.push(Math.random())
 }
 
 const demo = async () => {

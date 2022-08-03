@@ -48,6 +48,8 @@ const configDeps = props.deps ? (Array.isArray(props.deps) ? props.deps : [props
 
     <pre><code>defineNuxtConfig(merge({{ configName }}({{ configArgs.join(', ') }}), { ... }))</code></pre>
 
+    <slot />
+
     <p>
       <ExternalLink :href="`https://github.com/jerryjappinen/linna-vue/blob/master/nuxt.config/${configName}.js`">
         <Icon>
@@ -55,8 +57,6 @@ const configDeps = props.deps ? (Array.isArray(props.deps) ? props.deps : [props
         </Icon>
       </ExternalLink>
     </p>
-
-    <slot />
 
   </Bodytext>
 </template>

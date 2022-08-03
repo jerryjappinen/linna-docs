@@ -1,4 +1,6 @@
 <script setup>
+import scss from 'linna-vue/nuxt/config/scss'
+
 const sampleOptions = {
   global: [
     'stylehels/global.scss'
@@ -21,5 +23,7 @@ const sampleOptions = {
     <p>
       <strong>Support for importing Sass.</strong> Easily enable global styling and sharing mixins and variables throughout the app.
     </p>
+
+    <Dump :data="scss(sampleOptions)" />
   </NuxtConfigPage>
 </template>

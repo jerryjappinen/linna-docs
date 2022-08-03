@@ -1,4 +1,6 @@
 <script setup>
+import metaConfig from 'linna-vue/nuxt/config/viewport'
+
 const sampleOptions = {
   width: 'device-width',
   initialScale: 1,
@@ -13,5 +15,7 @@ const sampleOptions = {
     :args-sample="sampleOptions"
   >
     <p>Add common viewport meta tags and mobile zooming options.</p>
+
+    <Dump :data="metaConfig(sampleOptions)" />
   </NuxtConfigPage>
 </template>

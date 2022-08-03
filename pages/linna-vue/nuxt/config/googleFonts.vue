@@ -1,4 +1,6 @@
 <script setup>
+import googleFonts from 'linna-vue/nuxt/config/googleFonts'
+
 // https://github.com/vbenjs/vite-plugin-compression#options
 const sampleOptions = ['Poppins', ['Dosis', 200, 300, 800], 'Mouse+Memoirs']
 </script>
@@ -13,6 +15,7 @@ const sampleOptions = ['Poppins', ['Dosis', 200, 300, 800], 'Mouse+Memoirs']
       Load Google Fonts.
     </p>
 
-    <pre><code></code></pre>
+    <Dump :data="googleFonts(...sampleOptions)" />
+
   </NuxtConfigPage>
 </template>

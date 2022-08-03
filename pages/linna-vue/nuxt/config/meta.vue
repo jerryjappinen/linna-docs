@@ -1,4 +1,6 @@
 <script setup>
+import helper from 'linna-vue/nuxt/config/meta'
+
 const sampleOptions = {
   siteAuthor: 'Author Name',
   siteTitle: 'My App',
@@ -19,5 +21,8 @@ const sampleOptions = {
     <p>
       Define the site-wide meta data for your Nuxt site.
     </p>
+
+    <Dump :data="helper(sampleOptions)" />
+
   </NuxtConfigPage>
 </template>

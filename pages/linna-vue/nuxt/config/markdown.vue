@@ -1,6 +1,7 @@
 <script setup>
-const sampleOptions = {
-}
+// import markdown from 'linna-vue/nuxt/config/markdown'
+
+const sampleOptions = {}
 </script>
 
 <template>
@@ -17,5 +18,8 @@ const sampleOptions = {
     <p>
       Note that you can add markdown-it plugins. You need to install them as dev dependencies. Add <code>plugins: []</code> to the options and they will be loaded.
     </p>
+
+    <!-- <Dump :data="markdown(sampleOptions)" /> -->
+
   </NuxtConfigPage>
 </template>

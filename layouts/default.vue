@@ -16,17 +16,25 @@ import {
     <div class="c-layout-default-sidebar">
       <div class="c-layout-default-sidebar-content">
 
+        <h3>Linna</h3>
+
         <ul>
           <li>
             <NuxtLink to="/" class="c-layout-default-sidebar-link">
-              Linna readme
+              Readme
             </NuxtLink>
           </li>
 
           <!-- Icons -->
           <li>
             <NuxtLink to="/linna-icons" class="c-layout-default-sidebar-link">
-              linna-icons
+              Icons
+            </NuxtLink>
+          </li>
+
+          <li>
+            <NuxtLink to="/linna-vue/nuxt/" class="c-layout-default-sidebar-link">
+              Nuxt 3
             </NuxtLink>
           </li>
         </ul>
@@ -90,12 +98,6 @@ import {
         </h3>
 
         <ul>
-          <li>
-            <NuxtLink to="/linna-vue/nuxt/" class="c-layout-default-sidebar-link">
-              Nuxt 3 support
-            </NuxtLink>
-          </li>
-
           <li v-for="nuxtConfigPage in nuxtConfigPages" :key="nuxtConfigPage">
             <NuxtLink :to="'/linna-vue/nuxt/config/' + nuxtConfigPage" class="c-layout-default-sidebar-link">
               <code>{{ nuxtConfigPage }}</code>

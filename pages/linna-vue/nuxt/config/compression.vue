@@ -1,4 +1,6 @@
 <script setup>
+import compression from 'linna-vue/nuxt/config/compression'
+
 // https://github.com/vbenjs/vite-plugin-compression#options
 const sampleOptions = {
   verbose: true,
@@ -21,5 +23,7 @@ const sampleOptions = {
     <p>
       Enable compression of assets delivered by the Nuxt app.
     </p>
+
+    <Dump :data="compression(sampleOptions)" />
   </NuxtConfigPage>
 </template>
