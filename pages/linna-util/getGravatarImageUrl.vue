@@ -10,7 +10,7 @@ const imageUrl = computed(getGravatarImageUrl(email.value, size.value))
 
 <template>
   <UtilPage
-    getGravatarImageUrl=""
+    name="getGravatarImageUrl"
     :args="['email', 'size', 'fallbackImageUrl']"
     deps="md5"
   >
