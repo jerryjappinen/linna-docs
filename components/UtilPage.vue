@@ -28,13 +28,13 @@ const utilDeps = props.deps ? (Array.isArray(props.deps) ? props.deps : [props.d
 </script>
 
 <template>
-  <div>
+  <Bodytext>
 
     <h2><code>{{ async ? 'async ' : '' }}{{ props.name }}({{ utilArgs.join(', ') }})</code></h2>
 
     <pre v-if="utilDeps.length"><code>npm i {{ utilDeps.join(' ') }}</code></pre>
 
-    <pre><code>import { {{ props.name }} } from 'linna-util'</code></pre>
+    <pre><code>import {{ props.name }} from 'linna-util/{{ props.name }}'</code></pre>
 
     <p>
       <ExternalLink :href="`https://github.com/jerryjappinen/linna-util/blob/master/src/${name}.js`">
@@ -46,5 +46,5 @@ const utilDeps = props.deps ? (Array.isArray(props.deps) ? props.deps : [props.d
 
     <slot />
 
-  </div>
+  </Bodytext>
 </template>

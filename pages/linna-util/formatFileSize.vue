@@ -1,5 +1,5 @@
 <script setup>
-import { formatFileSize } from 'linna-util'
+import formatFileSize from 'linna-util/formatFileSize'
 
 const fileSizes = [
   1,

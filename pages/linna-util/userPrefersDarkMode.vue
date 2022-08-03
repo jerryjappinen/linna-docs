@@ -1,5 +1,5 @@
 <script setup>
-import { userPrefersDarkMode } from 'linna-util'
+import userPrefersDarkMode from 'linna-util/userPrefersDarkMode'
 </script>
 
 <template>

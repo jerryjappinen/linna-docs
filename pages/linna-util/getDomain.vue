@@ -1,5 +1,5 @@
 <script setup>
-import { getDomain } from 'linna-util'
+import getDomain from 'linna-util/getDomain'
 
 const urls = [
   'https://foo.bar.com:8080/video/sadkhehsdaksd?thisnadthat=123&foo=bar',

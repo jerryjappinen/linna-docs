@@ -1,5 +1,5 @@
 <script setup>
-import { trimAllWhitespace } from 'linna-util'
+import trimAllWhitespace from 'linna-util/trimAllWhitespace'
 
 const string = `
 

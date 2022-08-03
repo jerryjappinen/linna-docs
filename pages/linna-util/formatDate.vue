@@ -1,5 +1,5 @@
 <script setup>
-import { formatDate } from 'linna-util'
+import formatDate from 'linna-util/formatDate'
 
 const renderedDate = formatDate(new Date())
 </script>

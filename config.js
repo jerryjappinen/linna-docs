@@ -1,5 +1,5 @@
 // https://github.com/nuxt/framework/issues/6205
-// import { isDev } from 'linna-util'
+// import isDev from 'linna-util/isDev'
 const isDev = () => {
   return process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'
 }
@@ -25,10 +25,12 @@ export const baseUrl = (process.env ? process.env.BASE_URL : null) || isDev()
 export const sassPages = [
   'body',
   'devices',
-  'shadow'
+  'shadow',
+  'webfonts'
 ]
 
 export const utilPages = [
+  'csvToJson',
   'formatDate',
   'formatDateInterval',
   'formatFileSize',
@@ -84,6 +86,7 @@ export const composablePages = [
 export const nuxtConfigPages = [
   'assets',
   'compression',
+  'googleFonts',
   'linna',
   'markdown',
   'meta',

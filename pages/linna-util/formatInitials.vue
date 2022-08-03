@@ -1,5 +1,5 @@
 <script setup>
-import { formatInitials } from 'linna-util'
+import formatInitials from 'linna-util/formatInitials'
 
 const text = ref('Some Name Goes Here')
 

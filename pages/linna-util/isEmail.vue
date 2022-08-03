@@ -1,5 +1,5 @@
 <script setup>
-import { isEmail } from 'linna-util'
+import isEmail from 'linna-util/isEmail'
 
 const demo = ref('foo@bar.io')
 </script>

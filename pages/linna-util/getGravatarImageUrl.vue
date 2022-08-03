@@ -1,5 +1,5 @@
 <script setup>
-import { getGravatarImageUrl } from 'linna-util'
+import getGravatarImageUrl from 'linna-util/getGravatarImageUrl'
 import UtilPage from '../../components/UtilPage.vue';
 
 const email = ref('eiskis@gmail.com')

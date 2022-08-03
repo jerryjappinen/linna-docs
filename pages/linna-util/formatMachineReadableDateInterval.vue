@@ -1,5 +1,5 @@
 <script setup>
-import { formatMachineReadableDateTime } from 'linna-util'
+import formatMachineReadableDateTime from 'linna-util/formatMachineReadableDateTime'
 import UtilPage from '../../components/UtilPage.vue';
 </script>
 

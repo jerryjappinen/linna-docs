@@ -1,5 +1,5 @@
 <script setup>
-import { trimNewLines } from 'linna-util'
+import trimNewLines from 'linna-util/trimNewLines'
 
 const string = `
 

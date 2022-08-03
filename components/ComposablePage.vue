@@ -39,7 +39,7 @@ const composableMethods = props.methods
 </script>
 
 <template>
-  <div>
+  <Bodytext>
 
     <h2><code>{{ useName }}({{ composableArgs.join(', ') }})</code></h2>
 
@@ -99,7 +99,7 @@ const composableMethods = props.methods
 
     <slot />
 
-  </div>
+  </Bodytext>
 </template>
 
 <style lang="scss" scoped>

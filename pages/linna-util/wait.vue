@@ -1,5 +1,5 @@
 <script setup>
-import { wait } from 'linna-util'
+import wait from 'linna-util/wait'
 
 const delay = 3000
 

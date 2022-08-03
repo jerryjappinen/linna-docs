@@ -14,16 +14,15 @@
   },
   "dependencies": {
     "date-fns": "^2.29.1",
-    "linna-icons": "^0.1.6",
-    "linna-sass": "^1.0.11",
-    "linna-util": "^6.5.1",
-    "linna-vue": "^0.6.12",
+    "linna-icons": "^0.1.8",
+    "linna-sass": "^1.1.2",
+    "linna-util": "^7.0.10",
+    "linna-vue": "^0.8.3",
     "lodash-es": "^4.17.21",
+    "md5": "^2.3.0",
     "pinia": "^2.0.17"
   },
   "devDependencies": {
-    "nuxt": "^3.0.0-rc.6",
-    "sass": "^1.54.0",
-    "sass-loader": "^13.0.2"
+    "nuxt": "^3.0.0-rc.6"
   }
 }

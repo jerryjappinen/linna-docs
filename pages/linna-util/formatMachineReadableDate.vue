@@ -1,5 +1,5 @@
 <script setup>
-import { formatMachineReadableDate } from 'linna-util'
+import formatMachineReadableDate from 'linna-util/formatMachineReadableDate'
 
 const renderedDate = formatMachineReadableDate(new Date())
 </script>

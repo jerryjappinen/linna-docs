@@ -30,7 +30,7 @@ const configDeps = props.deps ? (Array.isArray(props.deps) ? props.deps : [props
 </script>
 
 <template>
-  <div>
+  <Bodytext>
 
     <h2><code>{{ configName }}({{ configArgs.join(', ') }})</code></h2>
 
@@ -58,5 +58,5 @@ const configDeps = props.deps ? (Array.isArray(props.deps) ? props.deps : [props
 
     <slot />
 
-  </div>
+  </Bodytext>
 </template>

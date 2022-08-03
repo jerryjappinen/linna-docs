@@ -1,5 +1,5 @@
 <script setup>
-import { formatMonth } from 'linna-util'
+import formatMonth from 'linna-util/formatMonth'
 </script>
 
 <template>

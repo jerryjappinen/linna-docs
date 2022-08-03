@@ -1,5 +1,6 @@
 <script setup>
-import { tryPromises, wait } from 'linna-util'
+import tryPromises from 'linna-util/tryPromises'
+import wait from 'linna-util/wait'
 
 const results = ref(null)
 

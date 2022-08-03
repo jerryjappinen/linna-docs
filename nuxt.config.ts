@@ -32,6 +32,17 @@ import {
 import routes from './routes'
 
 const config = mergeConfigs(
+  // {
+  //   build: {
+  //     transpile: [
+  //       'md5-hex',
+  //       'blueimp-md5',
+  //       'gravatar-url',
+  //       'lodash-es'
+  //     ]
+  //   }
+  // },
+
   assets({
     baseUrl,
     longSiteTitle,

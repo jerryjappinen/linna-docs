@@ -1,5 +1,5 @@
 <script setup>
-import { isAbsoluteUrl } from 'linna-util'
+import isAbsoluteUrl from 'linna-util/isAbsoluteUrl'
 
 const urls = [
   'http://foo.bar',

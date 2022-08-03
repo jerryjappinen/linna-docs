@@ -1,5 +1,5 @@
 <script setup>
-import { formatSlug } from 'linna-util'
+import formatSlug from 'linna-util/formatSlug'
 
 const string = 'Foo bar foo bar foo bar'
 </script>

@@ -1,5 +1,5 @@
 <script setup>
-import { getNameFromEmail } from 'linna-util'
+import getNameFromEmail from 'linna-util/getNameFromEmail'
 
 const testStrings = [
   '',
