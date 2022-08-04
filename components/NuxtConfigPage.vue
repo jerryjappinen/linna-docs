@@ -30,7 +30,7 @@ const configDeps = props.deps ? (Array.isArray(props.deps) ? props.deps : [props
 </script>
 
 <template>
-  <Bodytext>
+  <div>
 
     <h2><code>{{ configName }}({{ configArgs.join(', ') }})</code></h2>
 
@@ -48,15 +48,19 @@ const configDeps = props.deps ? (Array.isArray(props.deps) ? props.deps : [props
 
     <pre><code>defineNuxtConfig({{ configName }}({{ configArgs.join(', ') }}))</code></pre>
 
-    <slot />
+    <Bodytext>
 
-    <p>
-      <ExternalLink :href="`https://github.com/jerryjappinen/linna-vue/blob/master/nuxt.config/${configName}.js`">
-        <Icon>
-          <IconGithub /> Source
-        </Icon>
-      </ExternalLink>
-    </p>
+      <slot />
 
-  </Bodytext>
+      <p>
+        <ExternalLink :href="`https://github.com/jerryjappinen/linna-vue/blob/master/nuxt.config/${configName}.js`">
+          <Icon>
+            <IconGithub /> Source
+          </Icon>
+        </ExternalLink>
+      </p>
+
+    </Bodytext>
+
+  </div>
 </template>

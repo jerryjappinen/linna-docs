@@ -19,7 +19,7 @@
 
     <h4>Defaults</h4>
 
-    <pre><code>$breakpoint-tiny: $iphone-6-plus-width;
+    <HighlightedCode lang="scss">$breakpoint-tiny: $iphone-6-plus-width;
 $breakpoint-small: 800px;
 $breakpoint-medium: 960px;
 $breakpoint-large: 1280px;
@@ -30,7 +30,7 @@ $breakpoint-phone-tight: $breakpoint-tiny;
 $breakpoint-phone: $breakpoint-small;
 $breakpoint-tablet: $breakpoint-large;
 $breakpoint-laptop: $breakpoint-very-large;
-$breakpoint-monitor: $breakpoint-full;</code></pre>
+$breakpoint-monitor: $breakpoint-full;</HighlightedCode>
 
   </div>
 </template>

@@ -20,7 +20,17 @@ const sampleOptions = {
       Load Google Fonts.
     </p>
 
+    <h4>Quick and dirty</h4>
+
+    <pre><code>googleFonts('Poppins', 'Dosis')</code></pre>
+
     <Dump :data="googleFonts('Poppins', 'Dosis')" />
+
+
+
+    <h4>Full weight options</h4>
+
+    <pre><code>googleFonts({{ sampleOptions }})</code></pre>
 
     <Dump :data="googleFonts(sampleOptions)" />
 

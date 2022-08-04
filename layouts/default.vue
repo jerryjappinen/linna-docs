@@ -89,6 +89,7 @@ import {
         <ul>
           <li v-for="composablePage in composablePages" :key="composablePage">
             <NuxtLink :to="'/linna-vue/composables/' + composablePage" class="c-layout-default-sidebar-link">
+              <IconVue class="c-layout-default-sidebar-icon" />
               <code>{{ composablePage }}</code>
             </NuxtLink>
           </li>
@@ -102,6 +103,7 @@ import {
         <ul>
           <li v-for="nuxtConfigPage in nuxtConfigPages" :key="nuxtConfigPage">
             <NuxtLink :to="'/linna-vue/nuxt/config/' + nuxtConfigPage" class="c-layout-default-sidebar-link">
+              <IconNuxtColor class="c-layout-default-sidebar-icon" />
               <code>{{ nuxtConfigPage }}</code>
             </NuxtLink>
           </li>

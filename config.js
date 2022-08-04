@@ -24,6 +24,7 @@ export const baseUrl = (process.env ? process.env.BASE_URL : null) || isDev()
 // Pages
 export const sassPages = [
   'body',
+  'breakpoints',
   'devices',
   'shadow',
   'webfonts'

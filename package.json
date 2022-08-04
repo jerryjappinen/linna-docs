@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "date-fns": "^2.29.1",
-    "linna-icons": "^0.1.11",
+    "highlight.js": "^11.6.0",
+    "linna-icons": "^0.1.13",
     "linna-sass": "^1.1.2",
     "linna-util": "^7.0.13",
     "linna-vue": "^0.8.6",
