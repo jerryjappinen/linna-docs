@@ -15,6 +15,7 @@ import {
   scss,
   sitemap,
   svg,
+  // transpile,
   viewport
 } from 'linna-vue/nuxt/config'
 
@@ -32,16 +33,13 @@ import {
 import routes from './routes'
 
 const config = mergeConfigs(
-  // {
-  //   build: {
-  //     transpile: [
-  //       'md5-hex',
-  //       'blueimp-md5',
-  //       'gravatar-url',
-  //       'lodash-es'
-  //     ]
-  //   }
-  // },
+  // transpile(
+  //   // 'md5-hex',
+  //   // 'blueimp-md5',
+  //   // 'gravatar-url',
+  //   // 'lodash-es',
+  //   'vite-svg-loader'
+  // ),
 
   assets({
     baseUrl,
@@ -70,7 +68,7 @@ const config = mergeConfigs(
     shared: ['styles/shared.scss']
   }),
   sitemap({
-    baseUrl,
+    // baseUrl, // breaks on RC6
     routes
   }),
   svg(),
@@ -84,7 +82,7 @@ const config = mergeConfigs(
     composables: true,
     dev: false
   }),
-  // compression(),
+  // compression(), // untested
 
   // Dev only
   dev({

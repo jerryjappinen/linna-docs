@@ -125,7 +125,7 @@ const monthValue = ref('')
           <td>
             <code>autocomplete</code> enables <ExternalLink
               href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#inappropriate-for-the-control"
-            >browser's autocomplete</ExternalLink> feature. Always use the <code>name</code> attribute with this.
+            >browser's autocomplete</ExternalLink> feature. Always use the <code>name</code> attribute when using autocomplete.
           </td>
           <td>
             <Textfield

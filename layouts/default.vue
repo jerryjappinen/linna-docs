@@ -41,12 +41,13 @@ import {
 
         <!-- Sass -->
         <h3 class="c-layout-default-sidebar-lib">
-          <code>linna-sass/</code>
+          <code>linna-sass</code>
         </h3>
 
         <ul>
           <li v-for="sassPage in sassPages" :key="sassPage">
             <NuxtLink :to="'/linna-sass/' + sassPage" class="c-layout-default-sidebar-link">
+              <IconScssColor class="c-layout-default-sidebar-icon" />
               <code>{{ sassPage }}</code>
             </NuxtLink>
           </li>
@@ -54,12 +55,13 @@ import {
 
         <!-- Utilities -->
         <h3 class="c-layout-default-sidebar-lib">
-          <code>linna-util/</code>
+          <code>linna-util</code>
         </h3>
 
         <ul>
           <li v-for="utilPage in utilPages" :key="utilPage">
             <NuxtLink :to="'/linna-util/' + utilPage" class="c-layout-default-sidebar-link">
+              <IconJavascriptColor class="c-layout-default-sidebar-icon" />
               <code>{{ utilPage }}</code>
             </NuxtLink>
           </li>
@@ -67,7 +69,7 @@ import {
 
         <!-- Components -->
         <h3 class="c-layout-default-sidebar-lib">
-          <code>linna-vue/components/</code>
+          <code>linna-vue/components</code>
         </h3>
 
         <ul>
@@ -81,7 +83,7 @@ import {
 
         <!-- Composables -->
         <h3 class="c-layout-default-sidebar-lib">
-          <code>linna-vue/composables/</code>
+          <code>linna-vue/composables</code>
         </h3>
 
         <ul>
@@ -94,7 +96,7 @@ import {
 
         <!-- nuxt.config -->
         <h3 class="c-layout-default-sidebar-lib">
-          <code>linna-vue/nuxt.config/</code>
+          <code>linna-vue/nuxt.config</code>
         </h3>
 
         <ul>
@@ -107,12 +109,13 @@ import {
 
         <!-- Pinia stores -->
         <h3 class="c-layout-default-sidebar-lib">
-          <code>linna-vue/stores/</code>
+          <code>linna-vue/stores</code>
         </h3>
 
         <ul>
           <li v-for="storePage in storePages" :key="storePage">
             <NuxtLink :to="'/linna-vue/stores/' + storePage" class="c-layout-default-sidebar-link">
+              <IconPiniaColor class="c-layout-default-sidebar-icon" />
               <code>{{ storePage }}</code>
             </NuxtLink>
           </li>

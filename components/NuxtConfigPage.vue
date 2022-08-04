@@ -36,7 +36,7 @@ const configDeps = props.deps ? (Array.isArray(props.deps) ? props.deps : [props
 
     <pre v-if="configDeps.length"><code>npm i -D {{ configDeps.join(' ') }}</code></pre>
 
-    <pre><code>import { merge, assets } from 'linna-vue/nuxt.config'</code></pre>
+    <pre><code>import { {{ configName }} } from 'linna-vue/nuxt.config'</code></pre>
 
     <template v-if="configArgSamples.length">
       <Dump
@@ -46,7 +46,7 @@ const configDeps = props.deps ? (Array.isArray(props.deps) ? props.deps : [props
       />
     </template>
 
-    <pre><code>defineNuxtConfig(merge({{ configName }}({{ configArgs.join(', ') }}), { ... }))</code></pre>
+    <pre><code>defineNuxtConfig({{ configName }}({{ configArgs.join(', ') }}))</code></pre>
 
     <slot />
 
